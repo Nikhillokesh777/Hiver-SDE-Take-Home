@@ -86,6 +86,8 @@ The system operates as a cohesive 9-stage modular pipeline:
 8. **Stage 9: Telemetry & Structured Logging** ([`src/pipeline.py`](file:///d:/Desktop/Hiver/src/pipeline.py))  
    Comprehensive JSON Lines telemetry logging with execution IDs, stage latencies, and explainable decision paths.
 
+> 📖 **Deep Dive**: For a complete file-by-file execution walkthrough tracing which files activate, where the query is solved, and the full role of every file in the project, see [**`QUERY_LIFECYCLE.md`**](QUERY_LIFECYCLE.md).
+
 ---
 
 ## 4. Leakage Prevention Guarantee
@@ -143,7 +145,8 @@ D:\Desktop\Hiver\
 │   ├── test_routing.py                 # Safety triggers, escalation rules & composite confidence math
 │   ├── test_pipeline_e2e.py            # End-to-end execution, schema, resilience & telemetry logging
 │   └── test_eval_metrics.py            # Baselines, Macro-F1, Escalation Recall/Precision & autonomy rates
-├── decision_log.md                     # 12 industrial engineering decisions
+├── QUERY_LIFECYCLE.md                  # File-by-file execution walkthrough & query lifecycle
+├── decision_log.md                     # 15 industrial engineering decisions
 ├── report.md                           # Comprehensive technical report
 ├── taxonomy.md                         # Frozen 8+1 intent taxonomy v1.0.0
 ├── reproduce.ps1                       # Windows reproduction script
