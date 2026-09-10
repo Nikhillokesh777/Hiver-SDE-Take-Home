@@ -20,8 +20,8 @@ else
 fi
 
 echo ""
-echo "[1/3] Running Full Test Suite (Stage 1-8 Components & Pipeline)..."
-$PYTHON -m pytest tests/test_data_integrity.py tests/test_pipeline.py -q
+echo "[1/3] Running Full Modular Test Suite (9 Test Files, 38 Tests)..."
+$PYTHON -m pytest tests/ -v
 echo "[PASS] All unit and integration tests passed!"
 
 echo ""

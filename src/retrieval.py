@@ -141,6 +141,8 @@ class HistoricalCaseRetriever:
         self._lazy_init_model()
 
         k = top_k or self.top_k
+        if not query or not query.strip():
+            return RetrievalResult(query=query, top_k=k, retrieved_cases=[], max_similarity=0.0, evidence_text="")
         query_emb = self._model.encode([query], normalize_embeddings=True, show_progress_bar=False)
         query_emb = np.ascontiguousarray(query_emb, dtype=np.float32)
 

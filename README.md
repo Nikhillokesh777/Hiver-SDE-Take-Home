@@ -36,8 +36,8 @@ chmod +x reproduce.sh
 
 ### Manual Run:
 ```bash
-# Run unit & component integration tests
-pytest tests/test_data_integrity.py tests/test_pipeline.py -v
+# Run full automated modular test suite (9 test files, 38 tests)
+pytest tests/ -v
 
 # Run 3-system evaluation harness on 200 golden examples
 python eval/run_eval.py --use-cache --limit 200
@@ -134,8 +134,15 @@ D:\Desktop\Hiver\
 │   ├── routing.py
 │   └── pipeline.py
 ├── tests\
-│   ├── test_data_integrity.py          # Leakage & normalization tests
-│   └── test_pipeline.py               # Unit & integration tests for all stages
+│   ├── test_data_integrity.py          # Schema, missing values, deduplication, 0-leakage assertion
+│   ├── test_preprocessing.py           # Normalization, PII handle masking, URL replacing, emoji preservation
+│   ├── test_thread.py                  # Multi-turn conversation handling & context turn bounding
+│   ├── test_intent.py                  # Intent classification, calibration & OOD fallback
+│   ├── test_retrieval.py               # Deterministic FAISS top-k retrieval & empty query handling
+│   ├── test_grounding.py               # Unsupported claim detection & regex hallucination filters
+│   ├── test_routing.py                 # Safety triggers, escalation rules & composite confidence math
+│   ├── test_pipeline_e2e.py            # End-to-end execution, schema, resilience & telemetry logging
+│   └── test_eval_metrics.py            # Baselines, Macro-F1, Escalation Recall/Precision & autonomy rates
 ├── decision_log.md                     # 12 industrial engineering decisions
 ├── report.md                           # Comprehensive technical report
 ├── taxonomy.md                         # Frozen 8+1 intent taxonomy v1.0.0

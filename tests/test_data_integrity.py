@@ -1,54 +1,73 @@
 """
-Tests for Phase 1 Data Integrity, Preprocessing Normalization, and Split Leakage Prevention.
+Tests for Data Integrity: Schema, Missing Values, Deduplication, and Leakage Prevention.
+Covers Section 4 and Section 14 of hiver_execution_plan.md.
 """
 
 import os
 import sys
+import json
 import pytest
 import pandas as pd
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from scripts.create_brand_working_set import normalize_text
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, ROOT_DIR)
+
+WORKING_SET_PATH = os.path.join(ROOT_DIR, "data", "processed", "brand_working_set.csv")
+GOLDEN_SET_PATH = os.path.join(ROOT_DIR, "data", "golden_set", "golden_set.jsonl")
+SPLIT_METADATA_PATH = os.path.join(ROOT_DIR, "data", "processed", "split_metadata.json")
 
 
-
-def test_normalize_text_masks_user_handles():
-    raw = "@115712 hello there, please help with @AppleSupport"
-    cleaned = normalize_text(raw, brand_name="AppleSupport")
-    assert "@customer" in cleaned
-    assert "@115712" not in cleaned
-    assert "@AppleSupport" in cleaned
-
-
-def test_normalize_text_replaces_urls():
-    raw = "Check the status at https://support.apple.com/status and http://example.com"
-    cleaned = normalize_text(raw, brand_name="AppleSupport")
-    assert "https://support.apple.com/status" not in cleaned
-    assert "[URL]" in cleaned
+def test_working_set_schema_and_columns():
+    """Verify processed brand working set has all required schema columns."""
+    assert os.path.exists(WORKING_SET_PATH), f"Working set missing at {WORKING_SET_PATH}"
+    df = pd.read_csv(WORKING_SET_PATH, nrows=50)
+    
+    required_cols = [
+        "brand", "customer_tweet_id", "customer_author", "customer_text_clean", 
+        "brand_tweet_id", "brand_reply_clean", "split"
+    ]
+    for col in required_cols:
+        assert col in df.columns, f"Missing required column: {col}"
 
 
-def test_normalize_text_preserves_emoji():
-    raw = "My phone died completely 😡🔥 please help @AppleSupport"
-    cleaned = normalize_text(raw, brand_name="AppleSupport")
-    assert "😡" in cleaned
-    assert "🔥" in cleaned
+def test_working_set_no_critical_missing_values():
+    """Verify clean customer queries and agent replies have no null/empty values."""
+    df = pd.read_csv(WORKING_SET_PATH, nrows=2000)
+    assert df["customer_text_clean"].isnull().sum() == 0
+    assert df["brand_reply_clean"].isnull().sum() == 0
+    assert (df["customer_text_clean"].astype(str).str.strip() == "").sum() == 0
 
 
 def test_disjoint_split_leakage_assertion():
-    # Synthetic verification of leakage check logic
-    data = {
-        "customer_tweet_id": [101, 102, 103, 104, 105],
-        "customer_text_clean": ["issue one", "issue two", "issue three", "issue four", "issue five"],
-        "split": ["retrieval_pool", "retrieval_pool", "retrieval_pool", "held_out_eval_pool", "held_out_eval_pool"]
-    }
-    df = pd.DataFrame(data)
+    """Verify strictly 0 leakage between retrieval_pool and held_out_eval_pool."""
+    if os.path.exists(SPLIT_METADATA_PATH):
+        with open(SPLIT_METADATA_PATH, "r", encoding="utf-8") as f:
+            meta = json.load(f)
+        assert meta.get("leakage_verified") is True
 
+    # Assert 0 intersection across customer tweet IDs
+    df = pd.read_csv(WORKING_SET_PATH, usecols=["customer_tweet_id", "split"])
     dev_ids = set(df[df["split"] == "retrieval_pool"]["customer_tweet_id"])
     eval_ids = set(df[df["split"] == "held_out_eval_pool"]["customer_tweet_id"])
-    
-    # Assert zero intersection
     assert len(dev_ids.intersection(eval_ids)) == 0
 
-    dev_texts = set(df[df["split"] == "retrieval_pool"]["customer_text_clean"])
-    eval_texts = set(df[df["split"] == "held_out_eval_pool"]["customer_text_clean"])
-    assert len(dev_texts.intersection(eval_texts)) == 0
+
+def test_golden_set_schema_and_volume():
+    """Verify Golden Evaluation Set contains between 150-250 validated ground-truth records."""
+    assert os.path.exists(GOLDEN_SET_PATH), f"Golden set missing at {GOLDEN_SET_PATH}"
+    records = []
+    with open(GOLDEN_SET_PATH, "r", encoding="utf-8") as f:
+        for line in f:
+            if line.strip():
+                records.append(json.loads(line))
+    
+    assert 150 <= len(records) <= 250, f"Golden set size {len(records)} outside required 150-250 range"
+    
+    required_keys = [
+        "example_id", "customer_tweet_id", "customer_text", 
+        "gold_intent", "gold_routing_decision", "gold_reply_reference"
+    ]
+    for r in records[:20]:
+        for k in required_keys:
+            assert k in r, f"Golden record missing required key: {k}"
+        assert r["gold_routing_decision"].upper() in ["AUTO_HANDLE", "ESCALATE"]
