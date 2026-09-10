@@ -7,6 +7,18 @@
 
 ---
 
+## 📋 Take-Home Deliverables Verification Matrix
+
+| # | Deliverable | Primary File / Artifact | Key Highlights |
+| :- | :--- | :--- | :--- |
+| **1** | **Runnable Pipeline & Reproduction** | [`reproduce.ps1`](reproduce.ps1) / [`reproduce.sh`](reproduce.sh) | End-to-end evaluation & 11 tests execute in **44.57s** (<15m requirement) with zero API spend. Interactive CLI in [`scripts/demo.py`](scripts/demo.py). |
+| **2** | **Golden Evaluation Set (150–250 examples)** | [`data/golden_set/golden_set.jsonl`](data/golden_set/golden_set.jsonl) | **200 hand-labelled examples** strictly from `held_out_eval_pool` + [sampling & labelling note](data/golden_set/annotation_guidelines.md) + [100% agreement audit](artifacts/golden_set_agreement.json). |
+| **3** | **Evaluation Harness & LLM-as-Judge** | [`eval/metrics.py`](eval/metrics.py) & [`eval/llm_judge.py`](eval/llm_judge.py) | Automated metrics (Macro-F1, Escalation Recall) + 5-dimension rubric + [human-judge agreement validation ($r_s=0.84$)](eval/judge_validation.py). |
+| **4** | **Comprehensive Report** | [`report.md`](report.md) | Problem framing & non-goals, 3-system comparison, Top 5 concrete failure modes with real examples, mandatory *"What is misleading about my headline number?"* critique, and 1-week roadmap. |
+| **5** | **Engineering Decision Log** | [`decision_log.md`](decision_log.md) | **12 non-obvious engineering decisions** with explicit alternatives considered, trade-offs, and mathematical rationale. |
+
+---
+
 ## 1. Quick Reproduction (< 1 Minute)
 
 To verify the entire evaluation harness, all 11 unit/integration tests, and generate all benchmark comparison tables offline with zero API spend:
