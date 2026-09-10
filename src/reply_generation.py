@@ -60,7 +60,15 @@ class ReplyGenerator:
             if not self.api_key:
                 raise ValueError("GEMINI_API_KEY not found in environment or .env file.")
 
-            from google import genai
+            try:
+                from google import genai
+            except ImportError:
+                import sys
+                project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+                venv_site = os.path.join(project_root, ".venv", "Lib", "site-packages")
+                if os.path.exists(venv_site) and venv_site not in sys.path:
+                    sys.path.insert(0, venv_site)
+                from google import genai
             self._client = genai.Client(api_key=self.api_key)
 
     def generate(

@@ -19,8 +19,12 @@ logging.getLogger("sentence_transformers").setLevel(logging.ERROR)
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
-# Add project root to sys.path
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Add project root and local .venv site-packages to sys.path
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, project_root)
+venv_site = os.path.join(project_root, ".venv", "Lib", "site-packages")
+if os.path.exists(venv_site) and venv_site not in sys.path:
+    sys.path.insert(0, venv_site)
 
 from src.pipeline import SupportAgentPipeline
 
