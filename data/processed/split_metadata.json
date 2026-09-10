@@ -1,0 +1,18 @@
+{
+  "brand": "Uber_Support",
+  "random_seed": 42,
+  "total_paired_records": 54187,
+  "deduplicated_removed_count": 1973,
+  "retrieval_pool_count": 43349,
+  "held_out_eval_pool_count": 10838,
+  "turn_distribution": {
+    "first_turn_count": 39131,
+    "follow_up_count": 15056
+  },
+  "length_distribution": {
+    "medium": 18455,
+    "short": 18268,
+    "long": 17464
+  },
+  "leakage_verified": true
+}

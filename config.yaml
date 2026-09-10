@@ -1,0 +1,89 @@
+# Central Configuration for Hiver Autonomous Support Agent
+# Single Source of Truth for pipeline parameters, paths, and thresholds.
+
+system:
+  seed: 42
+  environment: development
+  log_level: INFO
+
+paths:
+  raw_data: "data/raw/twcs.csv"
+  processed_dir: "data/processed"
+  brand_working_set: "data/processed/brand_working_set.csv"
+  retrieval_corpus: "data/processed/retrieval_corpus.jsonl"
+  golden_set: "data/golden_set/golden_set.jsonl"
+  artifacts_dir: "artifacts"
+  vector_index: "artifacts/faiss_index.bin"
+  vector_metadata: "artifacts/retrieval_metadata.json"
+  baseline_model: "artifacts/simple_baseline_classifier.joblib"
+  cached_llm_eval: "artifacts/cached_llm_eval.jsonl"
+  logs_dir: "logs"
+
+brand_selection:
+  candidate_count: 10
+  min_usable_volume: 1500
+  criteria_weights:
+    volume: 0.20
+    thread_completeness: 0.25
+    topical_diversity: 0.20
+    language_homogeneity: 0.15
+    resolution_readability: 0.20
+
+pipeline:
+  preprocessing:
+    anonymize_handles: true
+    normalize_urls: true
+    keep_emoji: true
+    min_message_len_chars: 5
+  
+  thread_reconstruction:
+    max_context_turns: 4
+    chaining_strategy: "response_chain"  # response_tweet_id -> in_response_to_tweet_id
+
+  intent_classification:
+    method: "hybrid_embedding_classifier"  # tfidf_lr, embedding_centroid, or llm
+    confidence_threshold: 0.65
+    fallback_intent: "Other/Unclear"
+
+  retrieval:
+    top_k: 3
+    embedding_model: "all-MiniLM-L6-v2"
+    filter_by_intent: true
+    min_similarity_score: 0.40
+
+  reply_generation:
+    provider: "gemini"
+    model: "gemini-2.5-flash"
+    temperature: 0.0
+    max_tokens: 256
+    prompt_version: "v1.0"
+
+  grounding_check:
+    provider: "gemini"
+    model: "gemini-2.5-flash"
+    temperature: 0.0
+    pass_threshold: 0.75
+
+  routing:
+    auto_handle_threshold: 0.70
+    weights:
+      intent_confidence: 0.30
+      retrieval_similarity: 0.35
+      grounding_score: 0.35
+    safety_escalate_intents:
+      - "Legal_Threat"
+      - "Safety_Security"
+      - "Repeated_Unresolved"
+
+evaluation:
+  sample_size: 200
+  judge:
+    provider: "gemini"
+    model: "gemini-2.5-flash"
+    temperature: 0.0
+    rubric_dimensions:
+      - "grounding"
+      - "relevance"
+      - "helpfulness"
+      - "tone_fit"
+      - "conciseness"

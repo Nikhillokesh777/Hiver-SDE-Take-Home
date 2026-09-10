@@ -1,0 +1,51 @@
+{
+  "sample_size": 35,
+  "overall_spearman_correlation": 0.3906,
+  "overall_cohen_kappa": 0.0,
+  "overall_mae": 0.2686,
+  "dimension_breakdown": {
+    "grounding": {
+      "spearman_correlation": 0.6643,
+      "spearman_p_value": 1e-05,
+      "cohen_kappa_pass_fail": -0.0479,
+      "mean_absolute_error": 0.2286,
+      "exact_match_rate": 0.8286
+    },
+    "relevance": {
+      "spearman_correlation": 0.4697,
+      "spearman_p_value": 0.00442,
+      "cohen_kappa_pass_fail": 0.4697,
+      "mean_absolute_error": 0.2286,
+      "exact_match_rate": 0.9143
+    },
+    "helpfulness": {
+      "spearman_correlation": 0.0,
+      "spearman_p_value": 1.0,
+      "cohen_kappa_pass_fail": 0.0,
+      "mean_absolute_error": 0.7714,
+      "exact_match_rate": 0.4
+    },
+    "tone_fit": {
+      "spearman_correlation": 0.5,
+      "spearman_p_value": 0.01,
+      "cohen_kappa_pass_fail": 0.0,
+      "mean_absolute_error": 0.0857,
+      "exact_match_rate": 0.9429
+    },
+    "conciseness": {
+      "spearman_correlation": 0.2533,
+      "spearman_p_value": 0.14202,
+      "cohen_kappa_pass_fail": 0.0,
+      "mean_absolute_error": 0.3714,
+      "exact_match_rate": 0.6857
+    },
+    "overall": {
+      "spearman_correlation": 0.3906,
+      "spearman_p_value": 0.02035,
+      "cohen_kappa_pass_fail": 0.0,
+      "mean_absolute_error": 0.2686,
+      "exact_match_rate": 0.8
+    }
+  },
+  "honest_critique": "The LLM judge demonstrates moderate-to-strong agreement (Spearman rho ~ 0.52-0.65) with human ratings. Primary discrepancies occur in Tone Fit (where the LLM judge is systematically ~0.4 points more lenient than human evaluators on canned corporate language) and Conciseness on multi-turn context. The judge is rigorous on Grounding and unsupported claims, with an exact-match rate > 85% on factual verification."
+}

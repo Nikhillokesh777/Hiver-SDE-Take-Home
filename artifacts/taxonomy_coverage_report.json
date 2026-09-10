@@ -1,0 +1,195 @@
+{
+  "sample_size": 100,
+  "other_unclear_count": 2,
+  "other_unclear_percentage": 2.0,
+  "coverage_rate": 98.0,
+  "confidence_threshold": 0.35,
+  "intent_distribution": {
+    "Account_Access_Or_App_Technical": 28,
+    "Pickup_Or_Arrival_Issue": 16,
+    "Fare_Dispute_Or_Refund": 15,
+    "Cancellation_Fee_Dispute": 13,
+    "Support_Status_Or_Escalation_Request": 13,
+    "Delivery_Or_Food_Issue": 7,
+    "Lost_Item_Inquiry": 3,
+    "Driver_Behavior_Or_Safety": 3,
+    "Other_Or_Unclear": 2
+  },
+  "sample_classifications": [
+    {
+      "tweet_id": 2965787,
+      "text": "@Uber_Support hi do this driver cancelled my trip after calling and finding out where I was going... Isn't that against your rules? [URL]",
+      "assigned_intent": "Cancellation_Fee_Dispute",
+      "similarity_score": 0.616,
+      "nearest_intent": "Cancellation_Fee_Dispute"
+    },
+    {
+      "tweet_id": 2221423,
+      "text": "@customer yall will charge me for each 3 min he waits but when I cancel coz he's been making me wait more than 10 mins yall will charge me $6 \ud83d\udc4d [URL]",
+      "assigned_intent": "Cancellation_Fee_Dispute",
+      "similarity_score": 0.4976,
+      "nearest_intent": "Cancellation_Fee_Dispute"
+    },
+    {
+      "tweet_id": 2679401,
+      "text": "@Uber_Support my app is frozen on a ride I took hours ago. How do I fix or cancel? [URL]",
+      "assigned_intent": "Account_Access_Or_App_Technical",
+      "similarity_score": 0.6076,
+      "nearest_intent": "Account_Access_Or_App_Technical"
+    },
+    {
+      "tweet_id": 2094307,
+      "text": "Ordered coldstone UberEATS and the store forgot one of my ice creams and told me pretty much too bad too sad they can\u2019t call me another uber and a manager isn\u2019t in until tomorrow. \ud83d\ude43\ud83d\ude43\ud83d\ude43 I lost my shit.",
+      "assigned_intent": "Delivery_Or_Food_Issue",
+      "similarity_score": 0.5912,
+      "nearest_intent": "Delivery_Or_Food_Issue"
+    },
+    {
+      "tweet_id": 2686905,
+      "text": "Poor service experience company looting customer's money in pool booking ride shown 99 rupees put I was asked to pay 321rupees. Here are proofs for the same @customer @Uber_Support @customer @customer [URL]",
+      "assigned_intent": "Fare_Dispute_Or_Refund",
+      "similarity_score": 0.5671,
+      "nearest_intent": "Fare_Dispute_Or_Refund"
+    },
+    {
+      "tweet_id": 1592510,
+      "text": "Since @customer doesn\u2019t have a customer service number how do I get my money back for food that wasn\u2019t delivered???",
+      "assigned_intent": "Delivery_Or_Food_Issue",
+      "similarity_score": 0.5205,
+      "nearest_intent": "Delivery_Or_Food_Issue"
+    },
+    {
+      "tweet_id": 1787469,
+      "text": "@Uber_Support I have received responses from all the times I\u2019ve reached out. However, my issue has not been addressed or resolved.",
+      "assigned_intent": "Account_Access_Or_App_Technical",
+      "similarity_score": 0.5283,
+      "nearest_intent": "Account_Access_Or_App_Technical"
+    },
+    {
+      "tweet_id": 2846403,
+      "text": "@Uber_Support what do I have to do to stop getting promo alerts? Unsubscribing doesn\u2019t actually work.",
+      "assigned_intent": "Account_Access_Or_App_Technical",
+      "similarity_score": 0.5512,
+      "nearest_intent": "Account_Access_Or_App_Technical"
+    },
+    {
+      "tweet_id": 764270,
+      "text": "What's the deal @customer? Can't find rides in Canberra at 8:30am? W/ @customer",
+      "assigned_intent": "Pickup_Or_Arrival_Issue",
+      "similarity_score": 0.4217,
+      "nearest_intent": "Pickup_Or_Arrival_Issue"
+    },
+    {
+      "tweet_id": 1131649,
+      "text": "@Uber_Support hello! I have the invite for my ride pass and it\u2019s 10am but there is no option appearing for me to purchase it.",
+      "assigned_intent": "Account_Access_Or_App_Technical",
+      "similarity_score": 0.4462,
+      "nearest_intent": "Account_Access_Or_App_Technical"
+    },
+    {
+      "tweet_id": 1052497,
+      "text": "@Uber_Support @customer thank you so much for giving my food to someone that wasn't me outside my hotel.",
+      "assigned_intent": "Delivery_Or_Food_Issue",
+      "similarity_score": 0.528,
+      "nearest_intent": "Delivery_Or_Food_Issue"
+    },
+    {
+      "tweet_id": 1118689,
+      "text": "@customer @Uber_Support this service is getting worse everyday drivers cancels trips to increase fare and start trip before pickup watch",
+      "assigned_intent": "Pickup_Or_Arrival_Issue",
+      "similarity_score": 0.5114,
+      "nearest_intent": "Pickup_Or_Arrival_Issue"
+    },
+    {
+      "tweet_id": 1662648,
+      "text": "@Uber_Support I am dissatisfied with customer service representative repeating the same thing again and again. Is there no way of escalation",
+      "assigned_intent": "Support_Status_Or_Escalation_Request",
+      "similarity_score": 0.6688,
+      "nearest_intent": "Support_Status_Or_Escalation_Request"
+    },
+    {
+      "tweet_id": 2217629,
+      "text": "@customer why can you charge for a cancelled right, but then cancel on a customer and charge MORE money for the next fare?",
+      "assigned_intent": "Cancellation_Fee_Dispute",
+      "similarity_score": 0.6691,
+      "nearest_intent": "Cancellation_Fee_Dispute"
+    },
+    {
+      "tweet_id": 1293167,
+      "text": "@customer Hello @Uber_Support #india .. been 4 days and u guys haven't done anything about this issue!! #sad #uber #nohelp time to say bye to Uber",
+      "assigned_intent": "Account_Access_Or_App_Technical",
+      "similarity_score": 0.4737,
+      "nearest_intent": "Account_Access_Or_App_Technical"
+    },
+    {
+      "tweet_id": 352201,
+      "text": "@Uber_Support help! Trying to use whilst abroad and keep getting told my payment method (2 types) are invalid and to verify my email (which",
+      "assigned_intent": "Account_Access_Or_App_Technical",
+      "similarity_score": 0.5671,
+      "nearest_intent": "Account_Access_Or_App_Technical"
+    },
+    {
+      "tweet_id": 275059,
+      "text": "@Uber_Support can anyone from uber contact me regarding a payment issue. I have been wrongly charged bcos of the cancellation by the driver",
+      "assigned_intent": "Cancellation_Fee_Dispute",
+      "similarity_score": 0.6971,
+      "nearest_intent": "Cancellation_Fee_Dispute"
+    },
+    {
+      "tweet_id": 1151020,
+      "text": "@Uber_Support lost my phone (7376308615) from which i booked the trip at lucknow. Please help me",
+      "assigned_intent": "Lost_Item_Inquiry",
+      "similarity_score": 0.5847,
+      "nearest_intent": "Lost_Item_Inquiry"
+    },
+    {
+      "tweet_id": 689100,
+      "text": "@Uber_Support I've contacted you multiple times and haven't received a response back. Can you help escalate this?",
+      "assigned_intent": "Support_Status_Or_Escalation_Request",
+      "similarity_score": 0.5746,
+      "nearest_intent": "Support_Status_Or_Escalation_Request"
+    },
+    {
+      "tweet_id": 2349758,
+      "text": "@Uber_Support my promo was not applied to my last trips. How can I get help?",
+      "assigned_intent": "Account_Access_Or_App_Technical",
+      "similarity_score": 0.5823,
+      "nearest_intent": "Account_Access_Or_App_Technical"
+    },
+    {
+      "tweet_id": 2828334,
+      "text": "@Uber_Support Sent Multiple message through App but no response. Is there way to escalate this. I am hearing standard response from support team since yesterday.",
+      "assigned_intent": "Support_Status_Or_Escalation_Request",
+      "similarity_score": 0.556,
+      "nearest_intent": "Support_Status_Or_Escalation_Request"
+    },
+    {
+      "tweet_id": 1340925,
+      "text": "@Uber_Support In app help blew me off. Why do accepted trips disappear from the app? That was a ding on my acceptance rate and $$$ lost",
+      "assigned_intent": "Account_Access_Or_App_Technical",
+      "similarity_score": 0.4448,
+      "nearest_intent": "Account_Access_Or_App_Technical"
+    },
+    {
+      "tweet_id": 1769497,
+      "text": "I have emailed uber 3 times but have not had any luck with getting at least a refund of the surcharge.Just wanted to warn people especially any girls as the situation could have ended so much worse. I've posted the guy from uber as an FYI @customer @Uber_Support",
+      "assigned_intent": "Cancellation_Fee_Dispute",
+      "similarity_score": 0.5851,
+      "nearest_intent": "Cancellation_Fee_Dispute"
+    },
+    {
+      "tweet_id": 1549391,
+      "text": "@customer hey Uber someone has hacked my account. Why would someone want to do that ?",
+      "assigned_intent": "Account_Access_Or_App_Technical",
+      "similarity_score": 0.4831,
+      "nearest_intent": "Account_Access_Or_App_Technical"
+    },
+    {
+      "tweet_id": 1382755,
+      "text": "Dear @customer Its 3am and i just got off work. Don't tell me u dont feel like \"going that far\" idgaf. Bitch im paying you $40+ for a $20 ride",
+      "assigned_intent": "Fare_Dispute_Or_Refund",
+      "similarity_score": 0.4794,
+      "nearest_intent": "Fare_Dispute_Or_Refund"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "generated_at": "2026-09-10 16:59:19",
+  "winner": "Uber_Support",
+  "runner_up": "AmazonHelp",
+  "candidates": [
+    {
+      "brand": "Uber_Support",
+      "outbound_replies": 56270,
+      "usable_inbound_volume": 56160,
+      "thread_completeness_pct": 99.8,
+      "topical_diversity_entropy": 0.8232,
+      "english_homogeneity_pct": 78.8,
+      "avg_reply_length": 110.8,
+      "substantive_reply_pct": 94.7,
+      "composite_score": 0.9217
+    },
+    {
+      "brand": "AmazonHelp",
+      "outbound_replies": 169840,
+      "usable_inbound_volume": 168814,
+      "thread_completeness_pct": 99.4,
+      "topical_diversity_entropy": 0.8242,
+      "english_homogeneity_pct": 76.0,
+      "avg_reply_length": 110.7,
+      "substantive_reply_pct": 93.6,
+      "composite_score": 0.9145
+    },
+    {
+      "brand": "SpotifyCares",
+      "outbound_replies": 43265,
+      "usable_inbound_volume": 43092,
+      "thread_completeness_pct": 99.6,
+      "topical_diversity_entropy": 0.8105,
+      "english_homogeneity_pct": 77.0,
+      "avg_reply_length": 137.5,
+      "substantive_reply_pct": 98.7,
+      "composite_score": 0.8964
+    },
+    {
+      "brand": "AppleSupport",
+      "outbound_replies": 106860,
+      "usable_inbound_volume": 106646,
+      "thread_completeness_pct": 99.8,
+      "topical_diversity_entropy": 0.8052,
+      "english_homogeneity_pct": 54.6,
+      "avg_reply_length": 128.6,
+      "substantive_reply_pct": 97.5,
+      "composite_score": 0.8874
+    },
+    {
+      "brand": "TMobileHelp",
+      "outbound_replies": 34317,
+      "usable_inbound_volume": 34215,
+      "thread_completeness_pct": 99.7,
+      "topical_diversity_entropy": 0.8173,
+      "english_homogeneity_pct": 77.8,
+      "avg_reply_length": 127.9,
+      "substantive_reply_pct": 97.5,
+      "composite_score": 0.8613
+    },
+    {
+      "brand": "Tesco",
+      "outbound_replies": 38573,
+      "usable_inbound_volume": 38468,
+      "thread_completeness_pct": 99.7,
+      "topical_diversity_entropy": 0.8162,
+      "english_homogeneity_pct": 64.1,
+      "avg_reply_length": 153.5,
+      "substantive_reply_pct": 96.4,
+      "composite_score": 0.8553
+    },
+    {
+      "brand": "comcastcares",
+      "outbound_replies": 33031,
+      "usable_inbound_volume": 32921,
+      "thread_completeness_pct": 99.7,
+      "topical_diversity_entropy": 0.8162,
+      "english_homogeneity_pct": 76.1,
+      "avg_reply_length": 132.6,
+      "substantive_reply_pct": 95.5,
+      "composite_score": 0.8493
+    },
+    {
+      "brand": "AmericanAir",
+      "outbound_replies": 36764,
+      "usable_inbound_volume": 36531,
+      "thread_completeness_pct": 99.4,
+      "topical_diversity_entropy": 0.8073,
+      "english_homogeneity_pct": 74.8,
+      "avg_reply_length": 100.9,
+      "substantive_reply_pct": 88.9,
+      "composite_score": 0.8461
+    },
+    {
+      "brand": "Delta",
+      "outbound_replies": 42253,
+      "usable_inbound_volume": 42114,
+      "thread_completeness_pct": 99.7,
+      "topical_diversity_entropy": 0.8062,
+      "english_homogeneity_pct": 72.5,
+      "avg_reply_length": 102.0,
+      "substantive_reply_pct": 76.4,
+      "composite_score": 0.8405
+    },
+    {
+      "brand": "British_Airways",
+      "outbound_replies": 29361,
+      "usable_inbound_volume": 29290,
+      "thread_completeness_pct": 99.8,
+      "topical_diversity_entropy": 0.8348,
+      "english_homogeneity_pct": 72.6,
+      "avg_reply_length": 129.2,
+      "substantive_reply_pct": 94.0,
+      "composite_score": 0.8305
+    }
+  ]
+}

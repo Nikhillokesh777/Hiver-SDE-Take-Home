@@ -1,0 +1,14 @@
+{
+  "audit_sample_size": 20,
+  "golden_set_total_size": 200,
+  "audit_fraction_pct": 10.0,
+  "metrics": {
+    "intent_raw_agreement_pct": 100.0,
+    "intent_cohens_kappa": 1.0,
+    "routing_raw_agreement_pct": 100.0,
+    "routing_cohens_kappa": 1.0
+  },
+  "disagreement_count": 0,
+  "disagreement_cases": [],
+  "verdict": "High consistency across self-audit; annotations frozen as trustworthy ground truth."
+}

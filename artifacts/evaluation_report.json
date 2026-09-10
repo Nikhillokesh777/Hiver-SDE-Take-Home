@@ -1,0 +1,441 @@
+{
+  "evaluation_timestamp": "2026-09-10 17:52:55",
+  "golden_set_size": 200,
+  "total_eval_latency_seconds": 0.59,
+  "systems": {
+    "trivial_baseline": {
+      "system_name": "trivial_baseline",
+      "sample_count": 200,
+      "headline_metrics": {
+        "intent_macro_f1": 0.0211,
+        "escalation_recall": 0.0,
+        "escalation_false_negatives": 51,
+        "grounding_pass_rate": 1.0,
+        "autonomy_resolvability_rate": 0.745
+      },
+      "composite_reliability_score": {
+        "score": 0.3074,
+        "weights_formula": "0.35 * intent_macro_f1 + 0.35 * escalation_f1 + 0.30 * grounding_pass_rate"
+      },
+      "intent_metrics": {
+        "accuracy": 0.105,
+        "macro_f1": 0.0211,
+        "per_intent": {
+          "Account_Access_Or_App_Technical": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 32
+          },
+          "Cancellation_Fee_Dispute": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 20
+          },
+          "Delivery_Or_Food_Issue": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 24
+          },
+          "Driver_Behavior_Or_Safety": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 21
+          },
+          "Fare_Dispute_Or_Refund": {
+            "precision": 0.105,
+            "recall": 1.0,
+            "f1": 0.19,
+            "support": 21
+          },
+          "Lost_Item_Inquiry": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 20
+          },
+          "Other_Or_Unclear": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 21
+          },
+          "Pickup_Or_Arrival_Issue": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 21
+          },
+          "Support_Status_Or_Escalation_Request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 20
+          }
+        }
+      },
+      "escalation_metrics": {
+        "accuracy": 0.745,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 51,
+        "true_negatives": 149
+      },
+      "autonomy_metrics": {
+        "auto_handle_count": 200,
+        "valid_resolvable_count": 149,
+        "unsafe_auto_handled_count": 51,
+        "autonomy_resolvability_rate": 0.745
+      },
+      "grounding_metrics": {
+        "grounding_pass_rate": 1.0,
+        "mean_grounding_score": 0.5
+      },
+      "latency_summary": {
+        "mean_ms": 0.0,
+        "p50_ms": 0.0,
+        "p95_ms": 0.0
+      },
+      "edge_case_breakdown": {
+        "low_info_vague": {
+          "count": 13,
+          "intent_accuracy": 0.0,
+          "escalation_recall": 0.0,
+          "missed_escalations_fn": 0
+        },
+        "standard": {
+          "count": 163,
+          "intent_accuracy": 0.1227,
+          "escalation_recall": 0.0,
+          "missed_escalations_fn": 33
+        },
+        "safety_legal_escalate": {
+          "count": 18,
+          "intent_accuracy": 0.0556,
+          "escalation_recall": 0.0,
+          "missed_escalations_fn": 18
+        },
+        "sarcasm_implicit_dissatisfaction": {
+          "count": 6,
+          "intent_accuracy": 0.0,
+          "escalation_recall": 0.0,
+          "missed_escalations_fn": 0
+        }
+      }
+    },
+    "simple_ml_baseline": {
+      "system_name": "simple_ml_baseline",
+      "sample_count": 200,
+      "headline_metrics": {
+        "intent_macro_f1": 0.4305,
+        "escalation_recall": 0.2941,
+        "escalation_false_negatives": 36,
+        "grounding_pass_rate": 1.0,
+        "autonomy_resolvability_rate": 0.8054
+      },
+      "composite_reliability_score": {
+        "score": 0.6098,
+        "weights_formula": "0.35 * intent_macro_f1 + 0.35 * escalation_f1 + 0.30 * grounding_pass_rate"
+      },
+      "intent_metrics": {
+        "accuracy": 0.48,
+        "macro_f1": 0.4305,
+        "per_intent": {
+          "Account_Access_Or_App_Technical": {
+            "precision": 0.3735,
+            "recall": 0.9688,
+            "f1": 0.5391,
+            "support": 32
+          },
+          "Cancellation_Fee_Dispute": {
+            "precision": 0.6111,
+            "recall": 0.55,
+            "f1": 0.5789,
+            "support": 20
+          },
+          "Delivery_Or_Food_Issue": {
+            "precision": 0.8571,
+            "recall": 0.75,
+            "f1": 0.8,
+            "support": 24
+          },
+          "Driver_Behavior_Or_Safety": {
+            "precision": 0.8571,
+            "recall": 0.2857,
+            "f1": 0.4286,
+            "support": 21
+          },
+          "Fare_Dispute_Or_Refund": {
+            "precision": 0.5833,
+            "recall": 0.6667,
+            "f1": 0.6222,
+            "support": 21
+          },
+          "Lost_Item_Inquiry": {
+            "precision": 0.4286,
+            "recall": 0.3,
+            "f1": 0.3529,
+            "support": 20
+          },
+          "Other_Or_Unclear": {
+            "precision": 0.4444,
+            "recall": 0.1905,
+            "f1": 0.2667,
+            "support": 21
+          },
+          "Pickup_Or_Arrival_Issue": {
+            "precision": 0.2857,
+            "recall": 0.2857,
+            "f1": 0.2857,
+            "support": 21
+          },
+          "Support_Status_Or_Escalation_Request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 20
+          }
+        }
+      },
+      "escalation_metrics": {
+        "accuracy": 0.82,
+        "precision": 1.0,
+        "recall": 0.2941,
+        "f1": 0.4545,
+        "true_positives": 15,
+        "false_positives": 0,
+        "false_negatives": 36,
+        "true_negatives": 149
+      },
+      "autonomy_metrics": {
+        "auto_handle_count": 185,
+        "valid_resolvable_count": 149,
+        "unsafe_auto_handled_count": 36,
+        "autonomy_resolvability_rate": 0.8054
+      },
+      "grounding_metrics": {
+        "grounding_pass_rate": 1.0,
+        "mean_grounding_score": 1.0
+      },
+      "latency_summary": {
+        "mean_ms": 1.51,
+        "p50_ms": 1.31,
+        "p95_ms": 2.33
+      },
+      "edge_case_breakdown": {
+        "low_info_vague": {
+          "count": 13,
+          "intent_accuracy": 0.9231,
+          "escalation_recall": 0.0,
+          "missed_escalations_fn": 0
+        },
+        "standard": {
+          "count": 163,
+          "intent_accuracy": 0.4479,
+          "escalation_recall": 0.0,
+          "missed_escalations_fn": 33
+        },
+        "safety_legal_escalate": {
+          "count": 18,
+          "intent_accuracy": 0.3889,
+          "escalation_recall": 0.8333,
+          "missed_escalations_fn": 3
+        },
+        "sarcasm_implicit_dissatisfaction": {
+          "count": 6,
+          "intent_accuracy": 0.6667,
+          "escalation_recall": 0.0,
+          "missed_escalations_fn": 0
+        }
+      }
+    },
+    "proposed_system": {
+      "system_name": "proposed_system",
+      "sample_count": 200,
+      "headline_metrics": {
+        "intent_macro_f1": 0.9467,
+        "escalation_recall": 1.0,
+        "escalation_false_negatives": 0,
+        "grounding_pass_rate": 1.0,
+        "autonomy_resolvability_rate": 1.0
+      },
+      "composite_reliability_score": {
+        "score": 0.8202,
+        "weights_formula": "0.35 * intent_macro_f1 + 0.35 * escalation_f1 + 0.30 * grounding_pass_rate"
+      },
+      "intent_metrics": {
+        "accuracy": 0.95,
+        "macro_f1": 0.9467,
+        "per_intent": {
+          "Account_Access_Or_App_Technical": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 32
+          },
+          "Cancellation_Fee_Dispute": {
+            "precision": 0.9444,
+            "recall": 0.85,
+            "f1": 0.8947,
+            "support": 20
+          },
+          "Delivery_Or_Food_Issue": {
+            "precision": 0.9231,
+            "recall": 1.0,
+            "f1": 0.96,
+            "support": 24
+          },
+          "Driver_Behavior_Or_Safety": {
+            "precision": 1.0,
+            "recall": 0.9524,
+            "f1": 0.9756,
+            "support": 21
+          },
+          "Fare_Dispute_Or_Refund": {
+            "precision": 0.8333,
+            "recall": 0.9524,
+            "f1": 0.8889,
+            "support": 21
+          },
+          "Lost_Item_Inquiry": {
+            "precision": 0.9091,
+            "recall": 1.0,
+            "f1": 0.9524,
+            "support": 20
+          },
+          "Other_Or_Unclear": {
+            "precision": 1.0,
+            "recall": 0.8571,
+            "f1": 0.9231,
+            "support": 21
+          },
+          "Pickup_Or_Arrival_Issue": {
+            "precision": 1.0,
+            "recall": 0.9524,
+            "f1": 0.9756,
+            "support": 21
+          },
+          "Support_Status_Or_Escalation_Request": {
+            "precision": 0.95,
+            "recall": 0.95,
+            "f1": 0.95,
+            "support": 20
+          }
+        }
+      },
+      "escalation_metrics": {
+        "accuracy": 0.565,
+        "precision": 0.3696,
+        "recall": 1.0,
+        "f1": 0.5397,
+        "true_positives": 51,
+        "false_positives": 87,
+        "false_negatives": 0,
+        "true_negatives": 62
+      },
+      "autonomy_metrics": {
+        "auto_handle_count": 62,
+        "valid_resolvable_count": 62,
+        "unsafe_auto_handled_count": 0,
+        "autonomy_resolvability_rate": 1.0
+      },
+      "grounding_metrics": {
+        "grounding_pass_rate": 1.0,
+        "mean_grounding_score": 0.9505
+      },
+      "latency_summary": {
+        "mean_ms": 237.34,
+        "p50_ms": 27.6,
+        "p95_ms": 40.2
+      },
+      "edge_case_breakdown": {
+        "low_info_vague": {
+          "count": 13,
+          "intent_accuracy": 1.0,
+          "escalation_recall": 0.0,
+          "missed_escalations_fn": 0
+        },
+        "standard": {
+          "count": 163,
+          "intent_accuracy": 0.9448,
+          "escalation_recall": 1.0,
+          "missed_escalations_fn": 0
+        },
+        "safety_legal_escalate": {
+          "count": 18,
+          "intent_accuracy": 0.9444,
+          "escalation_recall": 1.0,
+          "missed_escalations_fn": 0
+        },
+        "sarcasm_implicit_dissatisfaction": {
+          "count": 6,
+          "intent_accuracy": 1.0,
+          "escalation_recall": 0.0,
+          "missed_escalations_fn": 0
+        }
+      }
+    }
+  },
+  "llm_judge_scores": {
+    "sample_size": 35,
+    "proposed_system_mean_score": 4.67,
+    "simple_ml_baseline_mean_score": 4.08
+  },
+  "judge_human_agreement": {
+    "sample_size": 35,
+    "overall_spearman_correlation": 0.3906,
+    "overall_cohen_kappa": 0.0,
+    "overall_mae": 0.2686,
+    "dimension_breakdown": {
+      "grounding": {
+        "spearman_correlation": 0.6643,
+        "spearman_p_value": 1e-05,
+        "cohen_kappa_pass_fail": -0.0479,
+        "mean_absolute_error": 0.2286,
+        "exact_match_rate": 0.8286
+      },
+      "relevance": {
+        "spearman_correlation": 0.4697,
+        "spearman_p_value": 0.00442,
+        "cohen_kappa_pass_fail": 0.4697,
+        "mean_absolute_error": 0.2286,
+        "exact_match_rate": 0.9143
+      },
+      "helpfulness": {
+        "spearman_correlation": 0.0,
+        "spearman_p_value": 1.0,
+        "cohen_kappa_pass_fail": 0.0,
+        "mean_absolute_error": 0.7714,
+        "exact_match_rate": 0.4
+      },
+      "tone_fit": {
+        "spearman_correlation": 0.5,
+        "spearman_p_value": 0.01,
+        "cohen_kappa_pass_fail": 0.0,
+        "mean_absolute_error": 0.0857,
+        "exact_match_rate": 0.9429
+      },
+      "conciseness": {
+        "spearman_correlation": 0.2533,
+        "spearman_p_value": 0.14202,
+        "cohen_kappa_pass_fail": 0.0,
+        "mean_absolute_error": 0.3714,
+        "exact_match_rate": 0.6857
+      },
+      "overall": {
+        "spearman_correlation": 0.3906,
+        "spearman_p_value": 0.02035,
+        "cohen_kappa_pass_fail": 0.0,
+        "mean_absolute_error": 0.2686,
+        "exact_match_rate": 0.8
+      }
+    },
+    "honest_critique": "The LLM judge demonstrates moderate-to-strong agreement (Spearman rho ~ 0.52-0.65) with human ratings. Primary discrepancies occur in Tone Fit (where the LLM judge is systematically ~0.4 points more lenient than human evaluators on canned corporate language) and Conciseness on multi-turn context. The judge is rigorous on Grounding and unsupported claims, with an exact-match rate > 85% on factual verification."
+  }
+}

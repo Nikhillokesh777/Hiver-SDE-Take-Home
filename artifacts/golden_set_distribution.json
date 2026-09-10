@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-09-10 17:16:39",
+  "total_examples": 200,
+  "intent_distribution": {
+    "Account_Access_Or_App_Technical": 32,
+    "Delivery_Or_Food_Issue": 24,
+    "Other_Or_Unclear": 21,
+    "Fare_Dispute_Or_Refund": 21,
+    "Pickup_Or_Arrival_Issue": 21,
+    "Driver_Behavior_Or_Safety": 21,
+    "Support_Status_Or_Escalation_Request": 20,
+    "Lost_Item_Inquiry": 20,
+    "Cancellation_Fee_Dispute": 20
+  },
+  "routing_distribution": {
+    "AUTO_HANDLE": 149,
+    "ESCALATE": 51
+  },
+  "edge_case_distribution": {
+    "standard": 163,
+    "safety_legal_escalate": 18,
+    "low_info_vague": 13,
+    "sarcasm_implicit_dissatisfaction": 6
+  },
+  "length_distribution": {
+    "medium": 70,
+    "short": 67,
+    "long": 63
+  },
+  "turn_distribution": {
+    "first_turn": 158,
+    "follow_up": 42
+  },
+  "leakage_check_passed": true
+}

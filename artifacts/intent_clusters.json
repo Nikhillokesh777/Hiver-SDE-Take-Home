@@ -1,0 +1,183 @@
+{
+  "generated_at": "2026-09-10 17:10:01",
+  "sample_size": 2500,
+  "k_scan_results": {
+    "6": {
+      "silhouette_score": 0.053,
+      "inertia": 1162.4
+    },
+    "8": {
+      "silhouette_score": 0.0249,
+      "inertia": 1134.99
+    },
+    "10": {
+      "silhouette_score": 0.0208,
+      "inertia": 1115.73
+    }
+  },
+  "selected_k": 6,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "size": 249,
+      "percentage": 10.0,
+      "top_keywords": [
+        "customer",
+        "url",
+        "account",
+        "app",
+        "help",
+        "service",
+        "need",
+        "use"
+      ],
+      "representative_messages": [
+        "@customer @customer your customer support too unfriendly and dumb also.",
+        "@customer @customer lol it's still not working",
+        "@customer again with the money being taken out of my account !!!",
+        "@customer @customer Didn't work though:(",
+        "@customer @customer It doesn\u2019t work!",
+        "@customer - most frustrating customer service I\u2019ve ever encountered. \ud83d\udc4e\ud83c\udffc",
+        "@customer @customer @customer There is no way you contact @customer and tell your problem. Its so fucking complex. They just have infos no way of contacting.",
+        "@customer @customer Lol",
+        "@customer I am having problems with my account can someone please call me",
+        "@customer thanks for wasting my time for no reason."
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "size": 844,
+      "percentage": 33.8,
+      "top_keywords": [
+        "uber_support",
+        "help",
+        "customer",
+        "uber",
+        "account",
+        "dm",
+        "sent",
+        "email"
+      ],
+      "representative_messages": [
+        "@Uber_Support No help ?",
+        "@Uber_Support some assistance please",
+        "@Uber_Support help!",
+        "@Uber_Support Thanks, have done",
+        "@Uber_Support There you go",
+        "@Uber_Support help me",
+        "@Uber_Support Please check the DM",
+        "@Uber_Support Till date no Response",
+        "@Uber_Support help",
+        "@Uber_Support Please respond ASAP."
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "size": 174,
+      "percentage": 7.0,
+      "top_keywords": [
+        "customer",
+        "order",
+        "food",
+        "ordered",
+        "wrong",
+        "deliver",
+        "delivered",
+        "cold"
+      ],
+      "representative_messages": [
+        "@customer I'm really disappointed in you for delivering the wrong order. I made a simple order from @customer and now I'm sitting here with food I don't want and less than what I paid for.....!",
+        "@customer My food was supposed to be delivered an hour ago. Still not here. Been on hold with your customer support for 10 minutes. No one answering. #HANGRY [URL]",
+        "Thank you @customer (read sarcasm)... we\u2019ve been waiting on our food for 2 hrs to be told the 1st driver picked up the food but never delivered it \ud83d\ude33\ud83d\ude31\ud83d\ude44 Our order is now been cancel and we can reorder all over again #thanksbutnothanks",
+        "Absolutely appalling service from @customer tonight. Been charged for food that I did not receive. Stay clear of this awful company and use Deliveroo instead who actually value their customers. \ud83d\ude21\ud83d\ude21\ud83d\ude21\ud83d\ude21",
+        "@Uber_Support my wrong food order was delivered to my home last night",
+        "@customer - when they don\u2019t deliver what I ordered &amp; don\u2019t understand my obvious frustration at having no dinner but want me to \u201cappreciate\u201d how they run their business &amp; why they can\u2019t refund me the full amount - who let them loose in the food industry - they have no clue!",
+        "After ordering my food over an hour ago it's just been cancelled @customer \ud83d\ude44\ud83d\ude43 [URL]",
+        "@customer do you not reply to customers on your app that I have to come here to try? My food was cancelled over 1 hour after ordering! Joke!",
+        "@customer don't bother. Get your food on your own. Not worth the wait.",
+        "@customer not delivering food, THANKS"
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "size": 422,
+      "percentage": 16.9,
+      "top_keywords": [
+        "uber_support",
+        "charged",
+        "customer",
+        "uber",
+        "ride",
+        "trip",
+        "driver",
+        "refund"
+      ],
+      "representative_messages": [
+        "@customer @Uber_Support you charged me FIFTY FIVE DOLLARS for a trip i never took, your service sucks and i want my money back. i can't even contact your support because you DONT HAVE A NUMBER FOR SUPPORT. i won't be using your service anymore, terrible.",
+        "@Uber_Support This isn't good enough, I have sent multiple messages proving you charged me incorrectly but I've had no refund.",
+        "@customer @Uber_Support is overcharging me again, they charged me 2x more than the receipt that they sent me. Take care.",
+        "@Uber_Support Hello. One of your drivers didn't show up at the agreed location and then cancelled. I would like a refund of the charge.",
+        "@customer my uber was cancelled twice by the driver and I've been charged for this, with a hold of \u00a334 on my account!!! Please look into this #complaint",
+        "@Uber_Support I have raised a complaint in your support app - related to cancellation charge and no one has responded to that complaint yet.",
+        "@Uber_Support Then when i tried to cancel it a pop up showed that may charges will apply on me !!!",
+        "@Uber_Support please ensure I am not charged for any of the cancellations done today. 4 of then denied duty. 2 denied to take @customer",
+        "@Uber_Support please contact me directly, ive been inadvertently charged cancellation fees on my account. Prefer email contact",
+        "@Uber_Support nobody has even taken our order and over an hour of waiting. Can't even cancel our order or we will get charged...."
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "size": 477,
+      "percentage": 19.1,
+      "top_keywords": [
+        "driver",
+        "uber",
+        "uber_support",
+        "customer",
+        "drivers",
+        "url",
+        "car",
+        "ride"
+      ],
+      "representative_messages": [
+        "@customer @customer @Uber_Support if you charge me for this ya'll are thieves. Your driver didn't show up after me waiting for 10+ minutes! I called him twice and still didn't pick me up. Finally had to wave down another driver who was kind enough to take me home. [URL]",
+        "@Uber_Support i never received a call from the driver and the support person I spoke with was very rude and belittling.",
+        "@customer please can someone give me a call in regards to my experience his morning with one of your Uber drivers.",
+        "@Uber_Support The driver is not picking up. But he gave a missed call from the phone I have left.",
+        "@Uber_Support your driver made me wait for 10 mins then he cancels the trip like the bullshit is this \ud83d\ude12\ud83d\ude15 Now am running late!!!",
+        "@customer @Uber_Support I\u2019m getting a wrong response on a driver that left me after agreeing to wait for me. Can you help?",
+        "@Uber_Support I complained about a trip wherin driver misbehaved and tried to make unplanned stop. Answer of CS was sorry to hear that.",
+        "@Uber_Support Unfortunately your response was unsatisfactory. You ignored the fact my driver refused to pick me up and still charged me a cancellation fee. Last time I use @customer in Colombia \ud83c\udde8\ud83c\uddf4",
+        "@customer @Uber_Support So now I gotta go through the process again to pick up passengers!!! I quit",
+        "@Uber_Support I need to speak to a representative immediately about the behavior of one of your drivers \u2014 please DM me, asap."
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "size": 334,
+      "percentage": 13.4,
+      "top_keywords": [
+        "customer",
+        "driver",
+        "drivers",
+        "ride",
+        "car",
+        "just",
+        "cancelled",
+        "url"
+      ],
+      "representative_messages": [
+        "@customer pathetic, used you many times. Driver is lost on my road stops outside my complex and cancels order!!! Last time I use you",
+        "@customer my driver dropped me off at home and didn\u2019t end the ride right away and I got overcharged and now no one is answering me emails \ud83e\udd37\ud83c\udffb\u200d\u2640\ufe0f",
+        "Just had my @customer driver text me before my ride asking me where I'm going. I was a little confused. When I confirmed, he promptly dropped me. Made me late \ud83d\ude21",
+        "@customer And then have the nerve to cancel after I wait 15 mins when they're literally circling around my neighborhood. Get better drivers!",
+        "@customer app absolutely sucks. Driver just refused my trip and they charged me $7",
+        "@customer has gone so downhill!! My driver was late picking me up for airport sat now today my driver didn\u2019t end my trip when he dropped me off",
+        "I'm so sick of @customer drivers that lie about picking someone up and then we get charged for canceling the ride. Hire better people.",
+        "@customer how do you handle when drivers show up, see where you're going (or see you have luggage), drive 4 streets away and wait for you to cancel (forcing customer to manually ask for refund for charge and lose time) - this or similar been happening frequently...",
+        "@customer is becoming a joke, drivers purposefully driving past you, sitting around etc. to claim cancellation fee - multiple people it's happening to.",
+        "Just ordered an @customer and the driver cancelled my order when they were 5 minutes away from my house! Wtf"
+      ]
+    }
+  ]
+}

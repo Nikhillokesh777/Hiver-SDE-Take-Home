@@ -1,0 +1,160 @@
+{
+  "timestamp": "2026-09-10 16:59:42",
+  "row_count": 2811774,
+  "column_count": 7,
+  "columns": [
+    "tweet_id",
+    "author_id",
+    "inbound",
+    "created_at",
+    "text",
+    "response_tweet_id",
+    "in_response_to_tweet_id"
+  ],
+  "dtypes": {
+    "tweet_id": "int64",
+    "author_id": "str",
+    "inbound": "bool",
+    "created_at": "str",
+    "text": "str",
+    "response_tweet_id": "str",
+    "in_response_to_tweet_id": "float64"
+  },
+  "missing_values": {
+    "tweet_id": 0,
+    "author_id": 0,
+    "inbound": 0,
+    "created_at": 0,
+    "text": 0,
+    "response_tweet_id": 1040629,
+    "in_response_to_tweet_id": 794335
+  },
+  "missing_percentages": {
+    "tweet_id": 0.0,
+    "author_id": 0.0,
+    "inbound": 0.0,
+    "created_at": 0.0,
+    "text": 0.0,
+    "response_tweet_id": 37.01,
+    "in_response_to_tweet_id": 28.25
+  },
+  "inbound_distribution": {
+    "True": 1537843,
+    "False": 1273931
+  },
+  "total_unique_brands": 108,
+  "top_20_brands_by_replies": {
+    "AmazonHelp": 169840,
+    "AppleSupport": 106860,
+    "Uber_Support": 56270,
+    "SpotifyCares": 43265,
+    "Delta": 42253,
+    "Tesco": 38573,
+    "AmericanAir": 36764,
+    "TMobileHelp": 34317,
+    "comcastcares": 33031,
+    "British_Airways": 29361,
+    "SouthwestAir": 28977,
+    "VirginTrains": 27817,
+    "Ask_Spectrum": 25860,
+    "XboxSupport": 24557,
+    "sprintcare": 22381,
+    "hulu_support": 21872,
+    "sainsburys": 19466,
+    "GWRHelp": 19364,
+    "AskPlayStation": 19098,
+    "ChipotleTweets": 18749
+  },
+  "exact_duplicate_texts": 29156,
+  "exact_duplicate_pct": 1.04,
+  "threading": {
+    "has_in_response_to_tweet_id": 2017439,
+    "has_in_response_to_pct": 71.75,
+    "has_response_tweet_id": 1771145,
+    "has_response_pct": 62.99
+  },
+  "non_ascii_messages": 548632,
+  "non_ascii_pct": 19.51,
+  "sample_exchanges": [
+    {
+      "brand": "SpotifyCares",
+      "customer_author": "718658",
+      "customer_tweet_id": 2523590,
+      "customer_text": "Dear @115888 @118266 @SpotifyCares .\nYesterday, suddenly my account was kicked out the family package. I asked to my brother to resent the invitation but it won't work. Something is wrong it says. I need your help. Thanks \ud83d\ude07",
+      "brand_reply_id": 2523589,
+      "brand_reply_text": "@718658 Hey there! Can you DM us your account's username or email address? We'll take a look backstage /AP https://t.co/ldFdZRiNAt"
+    },
+    {
+      "brand": "UPSHelp",
+      "customer_author": "300151",
+      "customer_tweet_id": 753772,
+      "customer_text": "@UPSHelp @115817 service is terrible. Fedex is way better",
+      "brand_reply_id": 753771,
+      "brand_reply_text": "@300151 Sorry that you feel this way. Is there something that we can assist with? Click the link to DM your track # &amp; details. ^J.K https://t.co/wKJHDXWGRQ"
+    },
+    {
+      "brand": "ChipotleTweets",
+      "customer_author": "372352",
+      "customer_tweet_id": 1069373,
+      "customer_text": "@ChipotleTweets They're huge! It's usually 2 meals for me \ud83d\ude02",
+      "brand_reply_id": 1069371,
+      "brand_reply_text": "@372352 Me too. Lunch 1 and lunch 2 back to back. -Whit"
+    },
+    {
+      "brand": "comcastcares",
+      "customer_author": "373095",
+      "customer_tweet_id": 1072568,
+      "customer_text": "Why do I reset my modem and call you guys to reset the signal and still get \" shorten of bandwidth \" messages and ping spikes @116136",
+      "brand_reply_id": 1072566,
+      "brand_reply_text": "@373095 Can you please DM us the phone number and address on the account so we can help?-FRL"
+    },
+    {
+      "brand": "airtel_care",
+      "customer_author": "510027",
+      "customer_tweet_id": 1676709,
+      "customer_text": "@118424 u re the worst when it comes to internet service,before you were the best",
+      "brand_reply_id": 1676708,
+      "brand_reply_text": "@510027 Hello  @510027, kindly state the exact challenge you are experiencing along side the mobile number via DM. Thank you. ^ID"
+    },
+    {
+      "brand": "Uber_Support",
+      "customer_author": "557164",
+      "customer_tweet_id": 1864899,
+      "customer_text": "@115873 you have charged my friend double for no reason what so ever in Miami on Wednesday - no explanation. We want this sorted please.",
+      "brand_reply_id": 1864897,
+      "brand_reply_text": "@557164 Due to our privacy policy, we will have to speak directly to the account holder. Please have them contact us via https://t.co/balq3Eyso6"
+    },
+    {
+      "brand": "Safaricom_Care",
+      "customer_author": "494393",
+      "customer_tweet_id": 1961696,
+      "customer_text": "@Safaricom_Care it's a system application therefore it cannot. I have restarted, rebooted and powered off nothing works",
+      "brand_reply_id": 1961695,
+      "brand_reply_text": "@494393 Go to settings &gt; app &gt; search for the STK menu and force stop the application from running ^ED"
+    },
+    {
+      "brand": "ATT",
+      "customer_author": "458621",
+      "customer_tweet_id": 1458885,
+      "customer_text": "I have to give HUGE props to @att for making my iPhone X preorder experience super easy. I was finished in less than four minutes!!!",
+      "brand_reply_id": 1458884,
+      "brand_reply_text": "@458621 Thanks for the shout out \ud83d\ude0a\ud83d\udc95 We're happy to hear you had a pleasant experience!"
+    },
+    {
+      "brand": "AppleSupport",
+      "customer_author": "153601",
+      "customer_tweet_id": 583637,
+      "customer_text": "@AppleSupport We figured it out. Guess it worked only with the locked screen? Also has to be pressed to see the movement?",
+      "brand_reply_id": 583639,
+      "brand_reply_text": "@153601 That's the behavior that we expect. Check out our article for more info: https://t.co/hSnkM7JIIS If you have any feedback about how Live wallpapers look, please send it to us online at: https://t.co/eTPVYVFyd8"
+    },
+    {
+      "brand": "AppleSupport",
+      "customer_author": "589281",
+      "customer_tweet_id": 1991132,
+      "customer_text": "I\ufe0f  can somebody explain this iPhone error???? @AppleSupport",
+      "brand_reply_id": 1991131,
+      "brand_reply_text": "@589281 Let's help take a closer look. Please DM us the device and version of OS you're using to get started. https://t.co/GDrqU22YpT"
+    }
+  ]
+}

@@ -1,0 +1,1080 @@
+{
+  "6a0e09ebc9d174fdfec8d39626e122239dad24b84cd9e36e10da501e6fc0de39": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 5,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 5.0,
+    "justifications": {
+      "grounding": "The reply accurately reflects standard social media support procedure for acknowledging a DM without fabricating any information.",
+      "relevance": "The reply directly addresses the customer's message indicating they have sent information via DM.",
+      "helpfulness": "The reply provides a clear next step by confirming the DM was received and that a follow-up will occur, moving the interaction towards resolution.",
+      "tone_fit": "The tone is polite, personalized, and professional, fitting well with social media support standards.",
+      "conciseness": "The reply is concise and to the point, effectively communicating the necessary information in a brief format suitable for Twitter."
+    }
+  },
+  "a3bee964741456296802e1f48283bae40dba817da3453c7cac6eef6146ac1c6d": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 5,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 5.0,
+    "justifications": {
+      "grounding": "The reply adheres to standard Uber support procedures by asking for a DM with account and trip details without fabricating any policies or promises.",
+      "relevance": "The reply directly addresses the customer's reported issue of receiving the wrong order and offers to investigate.",
+      "helpfulness": "The reply provides clear and actionable next steps by instructing the customer to send a DM with specific necessary information.",
+      "tone_fit": "The tone is polite, empathetic, and professional, which is appropriate for social media customer support.",
+      "conciseness": "The reply is concise and to the point, providing all necessary information in a brief format suitable for Twitter."
+    }
+  },
+  "ca576a5445a34b4fbe2500fc1c571df89796d0552161850d53f0ea2f53f54c05": {
+    "grounding": 3,
+    "relevance": 1,
+    "helpfulness": 1,
+    "tone_fit": 3,
+    "conciseness": 5,
+    "overall_score": 2.6,
+    "justifications": {
+      "grounding": "The reply does not fabricate information, but the provided URL is not relevant to the customer's specific issue of a wrong order, making it a generic assumption of helpfulness.",
+      "relevance": "The reply about hours and delivery area is completely irrelevant to the customer's problem of receiving the wrong food order.",
+      "helpfulness": "The reply offers no actionable steps or direction to resolve the customer's issue of a wrong order, making it unhelpful.",
+      "tone_fit": "The tone is polite and professional, but it is robotic due to its complete lack of relevance to the customer's problem.",
+      "conciseness": "The reply is very concise and perfectly suited for a Twitter response in terms of length."
+    }
+  },
+  "08096f1fcb8dfa98b8d7627b91e0abab825861fb9b5fd2b18efe0dc5a79fba50": {
+    "grounding": 5,
+    "relevance": 1,
+    "helpfulness": 1,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 3.2,
+    "justifications": {
+      "grounding": "The reply is a generic statement that does not make any claims or promises, thus it cannot be ungrounded.",
+      "relevance": "The reply completely misses the customer's explicit request to 'DM me' and offers a generic platitude instead.",
+      "helpfulness": "The reply provides no actionable next steps or guidance for the customer to initiate a DM or receive help, making it unhelpful.",
+      "tone_fit": "The tone is polite and professional, conveying a willingness to assist, even if the content is unhelpful.",
+      "conciseness": "The reply is extremely short and to the point, perfectly suited for a Twitter interaction."
+    }
+  },
+  "717784f44078aaf289e2b6ceefb5e5661b3a9e02839dce27ad6d63777a29a23c": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 5,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 5.0,
+    "justifications": {
+      "grounding": "The reply adheres to standard support procedures by directing the customer to a private channel and asking for account details, without fabricating any information.",
+      "relevance": "The reply directly addresses the customer's request to DM by providing a link and instructing them on what information to provide.",
+      "helpfulness": "The reply is highly helpful as it provides a clear, actionable next step (a URL to send details) and specifies what information is needed.",
+      "tone_fit": "The tone is empathetic and professional, starting with 'Happy to help!' and maintaining a polite demeanor.",
+      "conciseness": "The reply is very concise and to the point, perfectly suited for a Twitter interaction with clear instructions in minimal words."
+    }
+  },
+  "e0fe50e7d524930bd2a61015c0295e326fbefeff480ac418ee2faecce887c064": {
+    "grounding": 3,
+    "relevance": 1,
+    "helpfulness": 1,
+    "tone_fit": 3,
+    "conciseness": 1,
+    "overall_score": 1.8,
+    "justifications": {
+      "grounding": "The reply is incomplete and does not make any specific claims that could be verified or unverified against evidence.",
+      "relevance": "The reply is too generic and directly contradicts the customer's explicit statement that they do not need clarification on 'how it works'.",
+      "helpfulness": "The reply is an incomplete sentence and provides no actionable steps or movement towards resolution.",
+      "tone_fit": "The initial phrase 'We understand your concern' is polite, but the incompleteness of the reply makes it awkward and less professional.",
+      "conciseness": "The reply is extremely concise only because it is an incomplete sentence, rendering it unhelpful and unreadable."
+    }
+  },
+  "6c61b36f4230e1ff8bc29d6f35077c49e7cb7dcfbda84e7b581f3db56194ebbd": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "76dd1c776d8479d9bb46b984fd1827cf064a4dab4619ea5e6b1e3aec783409c8": {
+    "grounding": 4,
+    "relevance": 5,
+    "helpfulness": 5,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "cfaf5e716263bb7c0f856a3fc650c1a14f643f5b5c1349a7e903594a2b55ba64": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "3d698767e17a30b7ccd49e8642fefde5a02ef94ca023470cd3456a5e2dd2e0d0": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "3efe1b99f9c960bd3c52e466281c1d6c4c181d904b988b4e634a098b684867b4": {
+    "grounding": 4,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.6,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "c4b32ef8d05d89b5ba0f9ffc6cdc8637e88d36ce8895245b6b58e60fc72a9f0c": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "4c8554041a4db2e1dd70db4bfb86427fdadaa8b7403784480a05fbb342366c7a": {
+    "grounding": 4,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.6,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "a114ff245a702a30bde2f0271a9f003ea40b13141f19d77c66dc13a51322881f": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "237348b23c4f664bc8f2d8e2b60ab1e37f06e0bc61790cfa106bcf0ed20c2ea8": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "74c20c2860545d60667d0155eba199b713c7f82f279e9ed292ec42de770dd227": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "39865eb451d7c82484e412017b16e0db2cff2c7ed802f0708beb1c4741a7278a": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "c48d8503a25de7a94ef57f29a5467d0545f5adb4722d1c336c0c64c799a21a2b": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "851b9075d51e53ccf29aa377956bf456c06d38ba8bb1997bffbd1b5d5934cdf1": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "eec6bc4558e6e254a1a80569417d7e02c67a466486b9eab45db7ce070ba1fe52": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "f1d69a31c055de2215a8d548af50843bbe88608861a28c611b28df5d93afb742": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "846dd2c1a372d85603336d3e52608d2d0b91bbee37f39c2c14d7ccc6ed482ba0": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "e648e7ee267999c8af29e8e0d3bc5ab691af2e33ca87a040c3b1654a96b459ac": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "2ae5dc9657f6d6726cad43355041ca865d5b27e2cf997c2decd656abfa6bf6ea": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "9fc28ade4d78194ea6b876d68122b875ee484bf1c9d2a5cb65f41f746545bfe7": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "4cd434f3bf9cb8c72e205a77ffdf3bd22ca2cb13612d15f0d0249e39574d1ae1": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "ef396ee63d7a159e7c14e1941ff1b5ea5f48e1eada5ed2e80189c24e7db310e9": {
+    "grounding": 4,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.6,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "f71fb961d3fb8232690e5f8f34651114180298e74d51d831d5a2c367aea0b502": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "32042172dd68e5838705fd037945e636292bc58e08300de356564a50168cee78": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "0bd910d768ccb01480683495ae791fab8d8b5bac46eb6ccd231b81946b8c8079": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "550022776b777f5b5e0eee1b33d554219b1e8c384253fb8e6f4da01f89d6a942": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "0c76fc99f2f8bb86643f086d8bd79787c9a3764bb645cd3a610ea5b9c0431fbe": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "72f2c7985f32fd5727e249dd8933217cdca9bb43e5b0999126be74357b5a1970": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 5,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 5.0,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "d75ad24dab4812a1cb9a8a6e03e67ee8f9796a90c58065425c92e5b3bb1dddb4": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 5,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 5.0,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "b810cf40e70c4c4ec2614ac60ea38752b7ff2b234eb1cd4ffaa2331706ebbf91": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "b3cfbd2a6bf7afcbcffd5c7620dcbb2eb3dc739d43532aa50d7c063fa10f35b7": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 5,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 5.0,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "550b94c689f5e7769a1f518f6e0a56890035f69b5a93c36a5baf2a2e31d6a3b1": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "2d4fd02b940f5197985ef54e5f97a1e86e2115d23c6fc55f04bda15d72f48837": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 4,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "Reply strictly follows verified Uber support procedures with zero hallucinated dollar amounts.",
+      "relevance": "Directly addresses the customer inquiry and provides actionable next steps.",
+      "helpfulness": "Offers clear self-service or escalation paths to move customer toward resolution.",
+      "tone_fit": "Empathetic, polite, and matches official Uber Support social media standards.",
+      "conciseness": "Well-structured and appropriately concise for Twitter/X channel constraints."
+    }
+  },
+  "e2405d1fc29742a1e447b489ef2debf4464874704fec8da7811d20087943f0fc": {
+    "grounding": 3,
+    "relevance": 3,
+    "helpfulness": 5,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.2,
+    "justifications": {
+      "grounding": "The reply is mostly grounded by directing the customer to a standard support channel, but the promise of connecting 'right away' is a generic assumption not explicitly verified by evidence.",
+      "relevance": "The reply offers general help but does not specifically acknowledge the customer's detailed complaint about the driver pocketing money or their stated frustration with generic explanations.",
+      "helpfulness": "The reply is helpful as it provides a clear, actionable next step by directing the customer to a specific URL for further assistance.",
+      "tone_fit": "The tone is empathetic and professional, using phrases like 'Here to help!' and offering a direct channel for support.",
+      "conciseness": "The reply is very concise and efficient, providing necessary information in a brief format suitable for social media."
+    }
+  },
+  "92df46634c46f6d6d5c84fdae63326d2c97aab6a7242b9e1cfb701b7b9d7e365": {
+    "grounding": 5,
+    "relevance": 4,
+    "helpfulness": 5,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 4.8,
+    "justifications": {
+      "grounding": "The reply follows standard social media support protocol by asking for a DM to handle account-specific issues privately, without fabricating any information.",
+      "relevance": "The reply offers an alternative support channel, which is relevant to the customer's need for assistance, even if it doesn't directly explain the phone hold-up.",
+      "helpfulness": "The reply provides clear, actionable next steps by instructing the customer to send a DM with necessary account details to initiate private support.",
+      "tone_fit": "The tone is polite, professional, and empathetic, aligning with standard social media support expectations.",
+      "conciseness": "The reply is extremely concise and efficient, delivering clear instructions in a single, brief sentence."
+    }
+  },
+  "ff906ed8b88a69f9301d8d9b462df8e8f67c3dd891905648205ec342417d9d98": {
+    "grounding": 3,
+    "relevance": 1,
+    "helpfulness": 1,
+    "tone_fit": 3,
+    "conciseness": 5,
+    "overall_score": 2.6,
+    "justifications": {
+      "grounding": "The reply does not fabricate information but also does not provide any specific grounded policy information relevant to the customer's question.",
+      "relevance": "The reply completely fails to address the customer's specific question about driving a rental for Uber.",
+      "helpfulness": "The reply offers no actionable information or next steps to help the customer resolve their query.",
+      "tone_fit": "The tone is polite and attempts empathy, but it is generic and avoids directly answering the customer's question.",
+      "conciseness": "The reply is short and well-suited for a Twitter response."
+    }
+  },
+  "263ccc89155a783e5516a917c0978edded910921a67aa7d22f1e11ee01e4cbb8": {
+    "grounding": 5,
+    "relevance": 5,
+    "helpfulness": 5,
+    "tone_fit": 5,
+    "conciseness": 5,
+    "overall_score": 5.0,
+    "justifications": {
+      "grounding": "The reply adheres to standard social media support procedures by asking for a DM to address an account-specific issue, without fabricating any policies or promises.",
+      "relevance": "The reply directly addresses the customer's complaint about the delivery fee increase by offering to follow up and investigate the matter.",
+      "helpfulness": "The reply provides a clear and actionable next step by instructing the customer to DM their account email, which is necessary for further investigation and resolution.",
+      "tone_fit": "The tone is polite, professional, and empathetic, expressing a willingness to help promptly and matching social media support standards.",
+      "conciseness": "The reply is concise and to the point, providing all necessary information in two clear sentences, which is ideal for Twitter."
+    }
+  },
+  "94b4586799e1a578d6fc55c4194371ecceedf4f209ff3a8c10ac93896cfe405e": {
+    "grounding": 4,
+    "relevance": 2,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 3.8,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 18 words."
+    },
+    "cached": false
+  },
+  "7f19433ef2c8ed11bf3ce7dca931fe2776ccfe5179654363733b83545e2397c7": {
+    "grounding": 4,
+    "relevance": 2,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 3.8,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 11 words."
+    },
+    "cached": false
+  },
+  "69d7a8a6d2ea9c7f17ed1b7f12a845e3c8312af63a11c30cb18ced6156cd1bab": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 4.2,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 14 words."
+    },
+    "cached": false
+  },
+  "28c55c64c703ae9fdffeaabf770dfd34ede8e8e5881a5c04daee1666a9a0fa4a": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 4.2,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 15 words."
+    },
+    "cached": false
+  },
+  "37143bf26c052f2709ef1232c7cd63e29c1d358777d2a349ac2668068d5977fb": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 4.2,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 17 words."
+    },
+    "cached": false
+  },
+  "68425493cb1657c952b230e6bdc7c4821a1b8d1a2323ae6e7a87f885b9d66bfa": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 4.2,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 17 words."
+    },
+    "cached": false
+  },
+  "4bee34d5ba67aad33dccc2c51ad95bee12909a1dc3b1f5467a0dd26fee369ff1": {
+    "grounding": 4,
+    "relevance": 2,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 3.8,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 22 words."
+    },
+    "cached": false
+  },
+  "59dc04a6b57f52ca3791f807af1cbba6d5ca7f3c3495a7fa179792e19e665c95": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 4.2,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 20 words."
+    },
+    "cached": false
+  },
+  "b4e0e3bb9f089c76ecd7e4f30af4866f5c1b3f6a807219785b15bbba21b929b1": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 4.2,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 23 words."
+    },
+    "cached": false
+  },
+  "c30fa641fba6336168dedce3825dcf0832cfd8f07eb33d46ff2c3a561311f4c2": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 3,
+    "overall_score": 3.8,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 6 words."
+    },
+    "cached": false
+  },
+  "c417c8ffe478355035188bd6ee8a596b6fb6bf727a38adbb920939aefe1a9d9f": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 4.2,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 25 words."
+    },
+    "cached": false
+  },
+  "c85bad64593fbc366a7eba3818929e9c725ac683d74a7988c1fdc8f7f16f77a9": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 4.2,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 28 words."
+    },
+    "cached": false
+  },
+  "369689bfb79bd09954a5e1f9d42c3e99dc39823d06827cfaad8a379021462e74": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 4.2,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 20 words."
+    },
+    "cached": false
+  },
+  "95f268b0cb08000186ff5995f086f8a4e12902ad1f7b48b647f497e92aee0334": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 4.2,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 21 words."
+    },
+    "cached": false
+  },
+  "cd0d08e91241f337c8c4b70ca79f3eb877d090b4ed1db0ef4a7bf0b6250a13be": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 4.2,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 18 words."
+    },
+    "cached": false
+  },
+  "d19a9adf6ea5e77f311fff49452d5db44385b09609a3b8f1d910c46915d766d3": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 4.2,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 17 words."
+    },
+    "cached": false
+  },
+  "c1fd73a4becce68c017ad878399f31a4b25166c46d5706d428ee3919fee626f9": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 4.2,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 15 words."
+    },
+    "cached": false
+  },
+  "1ca43e4f84acdc1a769046544644922cf2c5822da73e2ef892d06f807ada0ca8": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 4.2,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 23 words."
+    },
+    "cached": false
+  },
+  "0dd3c497b0b0c147d23449fe91e99f7e742e8bfb21e6e0118849b793a7e3d681": {
+    "grounding": 4,
+    "relevance": 2,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 3.8,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 32 words."
+    },
+    "cached": false
+  },
+  "809ad8ccde583496367f1222f5831aa7fe848205d76448dd8cd007d9250c8edd": {
+    "grounding": 4,
+    "relevance": 2,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 3.8,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 22 words."
+    },
+    "cached": false
+  },
+  "e5264bf7af7588d0209e60c830f46d558cbd577b0ab149eec14aa422f706f312": {
+    "grounding": 4,
+    "relevance": 2,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 3.8,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 11 words."
+    },
+    "cached": false
+  },
+  "4bc895f52c4e84bcabeccb3a52827e59d0abb51e4a0051d4df1f5ef4fba29bfa": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 4.2,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 16 words."
+    },
+    "cached": false
+  },
+  "93728dabf7c8408775374819d551cfb3591042ef3622139007991dee44dbf864": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 4.2,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 23 words."
+    },
+    "cached": false
+  },
+  "0fbaec8d375ab2ca6a952c9abcc9951c45a5fa7e422dd0aedc145d5afb8de856": {
+    "grounding": 4,
+    "relevance": 2,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 3.8,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 23 words."
+    },
+    "cached": false
+  },
+  "e9bcdbc90962de6af18068cb9b7ae73dd14dc7b8ad1d17c76b7cea87f8c94d0b": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 3,
+    "overall_score": 3.8,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 9 words."
+    },
+    "cached": false
+  },
+  "6e23a077ee0aeaceb6405a1c7fa8a147601c076f071daab66583271cd8b21283": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 3,
+    "overall_score": 3.8,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 40 words."
+    },
+    "cached": false
+  },
+  "9e06a098ddc72e37a9f2289f83c93043cead54e3396458f05825ee159068e308": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 4.2,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 21 words."
+    },
+    "cached": false
+  },
+  "025904662350b1e348c68ccb01987283c02ae16686c65a08e6dc9d5c817ad75d": {
+    "grounding": 4,
+    "relevance": 4,
+    "helpfulness": 4,
+    "tone_fit": 4,
+    "conciseness": 5,
+    "overall_score": 4.2,
+    "justifications": {
+      "grounding": "Heuristic fallback: standard template verification.",
+      "relevance": "Heuristic fallback: keyword relevance matched.",
+      "helpfulness": "Heuristic fallback: standard escalation or DM guidance provided.",
+      "tone_fit": "Heuristic fallback: polite tone observed.",
+      "conciseness": "Heuristic fallback: reply length is 13 words."
+    },
+    "cached": false
+  }
+}
