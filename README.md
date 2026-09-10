@@ -134,13 +134,59 @@ D:\Desktop\Hiver\
 
 ---
 
-## 6. Interview Defense Guide (Addressing Hard Questions)
+## 6. Setup & Interactive Usage
 
-### Q1: Why is your Escalation Precision only 0.3696 while Simple ML is 1.0000?
-> **Answer**: This is a deliberate, mathematically calculated engineering trade-off. In safety-critical customer support (vehicle accidents, assault, physical threats), the cost of a False Negative (failing to escalate an injured or threatened customer) is catastrophic. Simple ML achieves 1.0000 precision only by taking an ultra-conservative keyword approach that misses **70.6% of actual escalations** (36 missed cases). Our system trades off precision to achieve **100% recall and 0 missed escalations**, guaranteeing that no dangerous situation is left to an autonomous bot.
+### Prerequisites
+- Python 3.10+ (tested on Python 3.13)
+- Windows PowerShell or Unix Bash
 
-### Q2: Why does Simple ML match the Proposed System with 1.0000 Grounding?
-> **Answer**: Simple ML returns historical customer resolutions *verbatim*. Because historical brand tweets are authentic past resolutions, they contain zero fabricated claims. However, verbatim replies frequently reference specific customer situations from 2017 that are irrelevant to the current user. The Proposed System matches this 1.0000 grounding while achieving a significantly higher LLM-Judge conversational quality score (**4.67 vs 4.08**).
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/Nikhillokesh777/Hiver-SDE-Take-Home.git
+cd Hiver-SDE-Take-Home
 
-### Q3: How do you guarantee that evaluation results aren't gamed or contaminated?
-> **Answer**: We enforce strict physical dataset isolation: `data/processed/brand_working_set.csv` splits data into `retrieval_pool` and `held_out_eval_pool` with zero ID or text overlap, validated in `tests/test_data_integrity.py`. The Golden Set was frozen before the pipeline was finalized. Furthermore, our entire evaluation runs offline deterministically in 44.57 seconds using cached artifacts, ensuring complete reproducibility without secret prompts or uncommitted weights.
+# Create and activate virtual environment
+python -m venv .venv
+# On Windows:
+.venv\Scripts\activate
+# On Linux/macOS:
+source .venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# (Optional) Set up your Gemini API key for live generation
+cp .env.example .env
+```
+
+### Interactive Single-Query Execution
+You can run any support inquiry through the full 9-stage pipeline:
+
+```python
+from src.pipeline import SupportAgentPipeline
+
+# Initialize the end-to-end pipeline
+pipeline = SupportAgentPipeline()
+
+# Process an incoming support tweet
+result = pipeline.run("My driver cancelled my trip and charged me a cancellation fee, can I get a refund?")
+
+print(f"Predicted Intent:    {result.predicted_intent}")
+print(f"Confidence Score:    {result.intent_confidence:.4f}")
+print(f"Routing Decision:    {result.routing_decision}")
+print(f"Grounding Passed:    {result.grounding_pass}")
+print(f"Generated Response:  {result.generated_reply}")
+```
+
+---
+
+## 7. Extended Technical Documentation
+
+Detailed deep-dives, architectural analyses, and engineering decisions are documented in dedicated reports:
+
+- [**Technical Evaluation Report (`report.md`)**](report.md): In-depth failure mode analysis (top 5 failure modes), misleading headline metric critiques, and production deployment recommendations.
+- [**Engineering Decision Log (`decision_log.md`)**](decision_log.md): Architectural decision records (ADRs) covering model selection, FAISS index configuration, grounding verification tiers, and safety threshold trade-offs.
+- [**Frozen Intent Taxonomy (`taxonomy.md`)**](taxonomy.md): Formal frozen 8+1 intent taxonomy specification (`v1.0.0`) with explicit negative boundaries, trigger phrases, and semantic clustering rationale.
+- [**Annotation Guidelines (`data/golden_set/annotation_guidelines.md`)**](data/golden_set/annotation_guidelines.md): Rigorous labelling rubrics and edge case handling rules used for constructing the 200-sample Golden Set.
+
