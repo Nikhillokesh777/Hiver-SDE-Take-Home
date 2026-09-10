@@ -5,6 +5,15 @@ Allows testing standard queries, edge cases, safety escalations, and custom inpu
 
 import sys
 import os
+import logging
+
+# Suppress HuggingFace / Transformers progress bars and warnings for clean console formatting
+os.environ["HF_HUB_DISABLE_PROGRESS_BARS"] = "1"
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+import warnings
+warnings.filterwarnings("ignore")
+logging.getLogger("transformers").setLevel(logging.ERROR)
+logging.getLogger("sentence_transformers").setLevel(logging.ERROR)
 
 # Ensure UTF-8 on Windows
 if hasattr(sys.stdout, "reconfigure"):
