@@ -97,17 +97,20 @@ class ReplyGenerator:
 Please draft the official @Uber_Support response following all strict grounding rules:"""
 
         try:
+            import warnings
             from google.genai import types
             config = types.GenerateContentConfig(
                 system_instruction=SYSTEM_INSTRUCTION,
                 temperature=self.temperature,
                 max_output_tokens=200,
             )
-            response = self._client.models.generate_content(
-                model=self.model_name,
-                contents=user_prompt,
-                config=config
-            )
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")
+                response = self._client.models.generate_content(
+                    model=self.model_name,
+                    contents=user_prompt,
+                    config=config
+                )
             reply_text = response.text.strip()
         except Exception as e:
             # Fallback deterministic grounded template in case of API network failure

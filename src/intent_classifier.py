@@ -100,7 +100,7 @@ class IntentClassifier:
             centroids = []
             for intent in self._intent_labels:
                 proto_texts = TAXONOMY_PROTOTYPES[intent]
-                proto_embs = self._model.encode(proto_texts, normalize_embeddings=True)
+                proto_embs = self._model.encode(proto_texts, normalize_embeddings=True, show_progress_bar=False)
                 centroid = np.mean(proto_embs, axis=0)
                 centroid = centroid / np.linalg.norm(centroid)
                 centroids.append(centroid)
@@ -119,7 +119,7 @@ class IntentClassifier:
                 all_scores={k: 0.0 for k in self._intent_labels}
             )
 
-        text_emb = self._model.encode([text], normalize_embeddings=True)[0]
+        text_emb = self._model.encode([text], normalize_embeddings=True, show_progress_bar=False)[0]
         # Cosine similarity against each prototype centroid
         sims = np.dot(self._proto_centroids, text_emb)
 

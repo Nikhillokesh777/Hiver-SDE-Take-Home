@@ -160,9 +160,44 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
-### Interactive Single-Query Execution
-You can run any support inquiry through the full 9-stage pipeline:
+### Interactive Query Execution
 
+You can test any customer inquiry through the full 9-stage pipeline using either the command line or Python:
+
+#### Method 1: Interactive CLI Menu
+Launch the interactive terminal interface:
+```bash
+python scripts/demo.py
+```
+This lets you pick from pre-configured edge cases (safety hazards, cancellation disputes, lost items) or type any custom query.
+
+#### Method 2: Direct Single-Query Command
+Test any inquiry directly in one line:
+
+```bash
+# On Windows (PowerShell) - Note: Use single quotes to preserve '$' characters:
+python scripts/demo.py 'My driver demanded that I pay him in cash even though the ride was already paid'
+
+# Another example: Cancellation fee dispute
+python scripts/demo.py 'My driver cancelled my ride and charged me a $5 cancellation fee, can I get a refund?'
+```
+
+**Sample Output**:
+```text
+======================================================================
+ INPUT QUERY:        My driver demanded that I pay him in cash even though the ride was already paid
+----------------------------------------------------------------------
+ PREDICTED INTENT:   Driver_Behavior_Or_Safety (Confidence: 0.2800)
+ ROUTING DECISION:   ESCALATE
+ ROUTING REASON:     Mandatory escalation policy: intent requires direct human tier-2 supervisor handling.
+ GROUNDING CHECK:    PASSED (Score: 0.85)
+----------------------------------------------------------------------
+ GENERATED REPLY:
+ "Hi there, we'd like to look into this for you. Please send us a DM with your registered email address and trip details so our team can assist: https://t.co/help"
+======================================================================
+```
+
+#### Method 3: Programmatic Python API
 ```python
 from src.pipeline import SupportAgentPipeline
 
