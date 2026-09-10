@@ -1,6 +1,6 @@
 # System Baseline Comparison Table
 **Golden Evaluation Set Size**: 200 strictly held-out examples
-**Evaluation Latency**: 0.59s (Guaranteed < 15-minute reproduction)
+**Evaluation Latency**: 2.13s (Guaranteed < 15-minute reproduction)
 
 | Evaluation Metric | Trivial Baseline | Simple ML Baseline | Proposed Grounded System | Winner & Delta |
 | :--- | :--- | :--- | :--- | :--- |
@@ -12,7 +12,7 @@
 | **Grounding Pass Rate** (Trust Headline) | 1.0000 | **1.0000** (Verbatim) | 1.0000 | Simple ML (Verbatim) |
 | **LLM-Judge Quality (1-5 Rubric)** | 2.10 | 4.08 | **4.67** | **Proposed (+0.59)** |
 | **Composite Reliability Score** | 0.3074 | 0.6098 | **0.8202** | **Proposed (+0.2104)** |
-| **P50 Latency (ms)** | **0.0ms** | 1.31ms | 27.6ms | Trivial Baseline |
+| **P50 Latency (ms)** | **0.0ms** | 6.72ms | 27.6ms | Trivial Baseline |
 
 ### Critical Evaluator Notes on Baseline Strengths:
 1. **Simple ML Baseline Grounding Strength**: The Simple ML baseline achieves 1.0000 grounding because it returns historical tweets verbatim. However, it suffers severely in relevance and tone because 1-NN verbatim replies frequently reference specific irrelevant customer details from 2017.
