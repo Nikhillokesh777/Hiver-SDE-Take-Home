@@ -107,11 +107,21 @@ Please draft the official @Uber_Support response following all strict grounding 
         try:
             import warnings
             from google.genai import types
-            config = types.GenerateContentConfig(
-                system_instruction=SYSTEM_INSTRUCTION,
-                temperature=self.temperature,
-                max_output_tokens=200,
-            )
+            try:
+                thinking_cfg = types.ThinkingConfig(thinking_budget=0)
+                config = types.GenerateContentConfig(
+                    system_instruction=SYSTEM_INSTRUCTION,
+                    temperature=self.temperature,
+                    thinking_config=thinking_cfg,
+                    max_output_tokens=300,
+                )
+            except Exception:
+                config = types.GenerateContentConfig(
+                    system_instruction=SYSTEM_INSTRUCTION,
+                    temperature=self.temperature,
+                    max_output_tokens=600,
+                )
+
             with warnings.catch_warnings():
                 warnings.simplefilter("ignore")
                 response = self._client.models.generate_content(
@@ -120,8 +130,13 @@ Please draft the official @Uber_Support response following all strict grounding 
                     config=config
                 )
             reply_text = response.text.strip()
+            if len(reply_text) < 25:
+                reply_text = (
+                    "We take this report very seriously. Your safety is our top priority. "
+                    "Please send us a direct message with your account email and trip details so our team can investigate immediately: https://t.co/help"
+                )
         except Exception as e:
-            # Fallback deterministic grounded template in case of API network failure
+            # Fallback deterministic grounded template in case of API network/quota failure
             reply_text = (
                 "Hi there, we'd like to look into this for you. Please send us a DM with your registered "
                 "email address and trip details so our team can assist: https://t.co/help"

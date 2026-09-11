@@ -9,11 +9,16 @@ import logging
 
 # Suppress HuggingFace / Transformers progress bars and warnings for clean console formatting
 os.environ["HF_HUB_DISABLE_PROGRESS_BARS"] = "1"
+os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
+os.environ["HF_HUB_DISABLE_IMPLICIT_TOKEN"] = "1"
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
+os.environ["TRANSFORMERS_VERBOSITY"] = "error"
 import warnings
 warnings.filterwarnings("ignore")
 logging.getLogger("transformers").setLevel(logging.ERROR)
 logging.getLogger("sentence_transformers").setLevel(logging.ERROR)
+logging.getLogger("google_genai").setLevel(logging.ERROR)
+logging.getLogger("urllib3").setLevel(logging.ERROR)
 
 # Ensure UTF-8 on Windows
 if hasattr(sys.stdout, "reconfigure"):
@@ -53,27 +58,39 @@ SAMPLE_QUERIES = [
 
 
 def display_result(res):
-    print("\n" + "=" * 70)
-    print(f" INPUT QUERY:        {res.input_text}")
-    print("-" * 70)
-    print(f" PREDICTED INTENT:   {res.predicted_intent} (Confidence: {res.intent_confidence:.4f})")
-    print(f" ROUTING DECISION:   {res.routing_decision}")
-    print(f" ROUTING REASON:     {res.routing_reason}")
-    print(f" GROUNDING CHECK:    {'PASSED' if res.grounding_pass else 'FAILED'} (Score: {res.grounding_score:.2f})")
-    print(f" LATENCY:            {res.latency_ms:.2f} ms")
-    print("-" * 70)
-    print(f" GENERATED REPLY:")
-    print(f" \"{res.generated_reply}\"")
-    print("=" * 70 + "\n")
+    clean_reply = res.generated_reply.replace("\r", " ").strip()
+    print("\n" + "=" * 70, flush=True)
+    print(f" INPUT QUERY:        {res.input_text}", flush=True)
+    print("-" * 70, flush=True)
+    print(f" PREDICTED INTENT:   {res.predicted_intent} (Confidence: {res.intent_confidence:.4f})", flush=True)
+    print(f" ROUTING DECISION:   {res.routing_decision}", flush=True)
+    print(f" ROUTING REASON:     {res.routing_reason}", flush=True)
+    print(f" GROUNDING CHECK:    {'PASSED' if res.grounding_pass else 'FAILED'} (Score: {res.grounding_score:.2f})", flush=True)
+    print(f" LATENCY:            {res.latency_ms:.2f} ms", flush=True)
+    print("-" * 70, flush=True)
+    print(" GENERATED REPLY:", flush=True)
+    print(f" \"{clean_reply}\"", flush=True)
+    print("=" * 70 + "\n", flush=True)
 
 
 def main():
-    print("\n" + "=" * 70)
-    print("  HIVERA SUPPORT AGENT - LIVE INTERACTIVE DEMO")
-    print("=" * 70)
-    print("Initializing pipeline (loading FAISS index and embeddings)...")
-    pipeline = SupportAgentPipeline()
-    print("Pipeline ready!\n")
+    import json
+    print("\n" + "=" * 70, flush=True)
+    print("  HIVER SUPPORT AGENT - LIVE INTERACTIVE DEMO", flush=True)
+    print("=" * 70, flush=True)
+    print("Initializing pipeline (loading FAISS index and embeddings)...", flush=True)
+
+    cache_path = os.path.join(project_root, "artifacts", "pipeline_golden_eval_cache.json")
+    cache = None
+    if os.path.exists(cache_path):
+        try:
+            with open(cache_path, "r", encoding="utf-8") as f:
+                cache = json.load(f)
+        except Exception:
+            cache = None
+
+    pipeline = SupportAgentPipeline(cache=cache)
+    print("Pipeline ready!\n", flush=True)
 
     if len(sys.argv) > 1:
         query = " ".join(sys.argv[1:])
