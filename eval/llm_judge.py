@@ -1,7 +1,6 @@
 """
-Phase 6: LLM-as-Judge Evaluation Framework.
-Implements the 5-dimension rubric, blind randomized scoring, and offline cache mechanism
-specified in Section 9 of hiver_execution_plan.md:
+LLM-as-Judge Evaluation Framework.
+Implements the 5-dimension rubric, blind randomized scoring, and offline cache mechanism:
 1. Grounding (1-5)
 2. Relevance (1-5)
 3. Helpfulness (1-5)

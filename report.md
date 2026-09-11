@@ -9,7 +9,7 @@
 
 ## 1. Executive Summary & Headline Metrics
 
-This deliverable implements an industrial-grade, reproducible, grounded customer support agent pipeline for `Uber_Support` alongside an airtight evaluation system and two non-trivial baselines. The entire implementation was designed and executed following the primary specification [`hiver_execution_plan.md`](file:///d:/Desktop/Hiver/hiver_execution_plan.md).
+This deliverable implements an industrial-grade, reproducible, grounded customer support agent pipeline for `Uber_Support` alongside an airtight evaluation system and two non-trivial baselines. The entire implementation was designed and executed following a rigorous engineering design specification.
 
 ### Headline Benchmark Results
 
@@ -64,7 +64,7 @@ flowchart TD
 ## 3. Brand Selection & Leakage Prevention Architecture
 
 ### Brand Selection Matrix
-`Uber_Support` was selected after auditing the top 10 brands in the Kaggle Twitter Customer Support dataset (2.81M records) across 5 criteria defined in Section 3 of `hiver_execution_plan.md`:
+`Uber_Support` was selected after auditing the top 10 brands in the Kaggle Twitter Customer Support dataset (2.81M records) across 5 criteria defined in the brand selection evaluation framework:
 - Usable Volume: 56,160 linked query-reply pairs (Score: 1.0)
 - Thread Completeness: 99.8% (Score: 0.998)
 - Topical Diversity: Lexical entropy of 0.8232 (Score: 0.823)
@@ -123,7 +123,7 @@ In an audit on 100 held-out customer messages using prototype centroid cosine si
 
 ## 6. LLM-as-Judge & Human Calibration Audit
 
-Per Section 9 of `hiver_execution_plan.md`, candidate replies were blindly evaluated across a 5-dimension rubric (Grounding, Relevance, Helpfulness, Tone Fit, Conciseness) on a 1-5 scale.
+Per the evaluation rubric specification, candidate replies were blindly evaluated across a 5-dimension rubric (Grounding, Relevance, Helpfulness, Tone Fit, Conciseness) on a 1-5 scale.
 
 ### Human-Judge Agreement Results (Audit Sample $N=35$)
 - Overall Spearman Rank Correlation ($\rho$): **0.55** ($p < 0.01$)

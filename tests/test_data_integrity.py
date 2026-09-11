@@ -1,6 +1,6 @@
 """
 Tests for Data Integrity: Schema, Missing Values, Deduplication, and Leakage Prevention.
-Covers Section 4 and Section 14 of hiver_execution_plan.md.
+Tests schema integrity, null value prevention, and strict 0-leakage between data splits.
 """
 
 import os

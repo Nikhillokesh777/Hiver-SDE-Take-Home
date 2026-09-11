@@ -1,8 +1,7 @@
 """
-Phase 6: Judge Validation Module.
+Judge Validation Module.
 Validates the LLM-as-Judge against human ratings across a sample of 30-50 golden examples.
-Measures Spearman rank correlation, Cohen's Kappa, and Mean Absolute Error (MAE) per Section 9
-of hiver_execution_plan.md.
+Measures Spearman rank correlation, Cohen's Kappa, and Mean Absolute Error (MAE).
 """
 
 import os

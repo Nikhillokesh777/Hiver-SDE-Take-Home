@@ -1,7 +1,7 @@
 {
-  "evaluation_timestamp": "2026-09-10 18:56:15",
+  "evaluation_timestamp": "2026-09-11 16:11:40",
   "golden_set_size": 200,
-  "total_eval_latency_seconds": 0.51,
+  "total_eval_latency_seconds": 0.61,
   "systems": {
     "trivial_baseline": {
       "system_name": "trivial_baseline",
@@ -224,9 +224,9 @@
         "mean_grounding_score": 1.0
       },
       "latency_summary": {
-        "mean_ms": 1.46,
-        "p50_ms": 1.17,
-        "p95_ms": 2.49
+        "mean_ms": 1.54,
+        "p50_ms": 1.23,
+        "p95_ms": 2.96
       },
       "edge_case_breakdown": {
         "low_info_vague": {

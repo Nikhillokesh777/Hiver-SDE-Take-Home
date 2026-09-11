@@ -2,7 +2,6 @@
 Golden Set Construction Script.
 Builds a frozen, leakage-protected 200-example Golden Evaluation Set from held_out_eval_pool.
 Stratified across intents, length buckets, turn positions, and deliberate edge cases.
-Follows Phase 3 and Section 7 of hiver_execution_plan.md.
 """
 
 import os

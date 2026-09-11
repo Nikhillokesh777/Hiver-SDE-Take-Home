@@ -3,8 +3,6 @@ Brand Working Set & Disjoint Split Generator.
 Extracts, cleans, normalizes, and splits the selected brand's conversations into:
 1. Retrieval Corpus Pool / Training Pool (for FAISS index and baseline classifier)
 2. Held-out Golden Set Candidate Pool (strictly disjoint, protected from evaluation leakage)
-
-Follows Step 3 & 4 of Phase 1 and Section 7 of hiver_execution_plan.md.
 """
 
 import os

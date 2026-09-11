@@ -5,7 +5,6 @@ of the frozen golden set to measure:
 1. Cohen's Kappa for intent classification consistency.
 2. Percentage agreement for escalation routing decisions.
 3. Disagreement audit and root-cause notes.
-Follows Phase 3 and Section 7 of hiver_execution_plan.md.
 """
 
 import os

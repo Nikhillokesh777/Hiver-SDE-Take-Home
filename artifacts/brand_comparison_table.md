@@ -1,6 +1,6 @@
 # Brand Selection Comparison Table
 
-Evaluation of top candidate brands based on the 5 measurable criteria from `hiver_execution_plan.md` (§3 Step 2).
+Evaluation of top candidate brands based on the 5 measurable criteria from the brand selection framework.
 
 | Rank | Brand | Usable Inbound Volume | Thread Completeness (%) | Topical Diversity (Entropy) | English Homogeneity (%) | Substantive Reply (%) | Composite Score |
 |---|---|---|---|---|---|---|---|

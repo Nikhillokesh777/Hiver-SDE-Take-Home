@@ -5,7 +5,6 @@ Implements transparent, explainable decision boundaries combining:
 - Historical retrieval similarity
 - Grounding verification score
 - Mandatory safety & legal escalation triggers
-Follows Sections 5 and 12 of hiver_execution_plan.md.
 """
 
 from typing import Dict, Any, List, Optional

@@ -1,6 +1,6 @@
 # Intent Taxonomy — Uber Support Agent
 **Version:** `1.0.0` (FROZEN)  
-**Status:** Frozen following empirical discovery (§4, `hiver_execution_plan.md`). Post-freeze modifications are prohibited without a formal decision log entry.  
+**Status:** Frozen following empirical discovery on held-out customer conversations. Post-freeze modifications are prohibited without a formal decision log entry.  
 **Coverage Audit:** 95.0% coverage on a 100 fresh held-out sample (`Other_Or_Unclear` rate = 5.0% <= 10.0% threshold).
 
 ---

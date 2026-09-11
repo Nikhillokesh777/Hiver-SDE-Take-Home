@@ -42,8 +42,8 @@ def test_grounding_catches_unsupported_dollar_refunds(checker):
 
 def test_grounding_passes_verified_official_reply(checker):
     """Verify compliant reply directing user to official Help links passes grounding check."""
-    evidence = "[Historical Case #3]\nResolution: Send us a note at https://t.co/help with trip details."
-    grounded_reply = "Hi there, we'd like to help. Please send us a DM with your trip details so we can assist: https://t.co/help"
+    evidence = "[Historical Case #3]\nResolution: Please send us a DM with your trip details so our team can assist: https://t.co/help"
+    grounded_reply = "Hi there, we'd like to help. Please send us a DM with your trip details so our team can assist: https://t.co/help"
     
     result = checker.check(grounded_reply, evidence, predicted_intent="Fare_Dispute_Or_Refund")
     assert result.grounding_pass is True

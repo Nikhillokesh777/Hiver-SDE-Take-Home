@@ -1,6 +1,5 @@
 """
 Structural Data Inspection Script for Kaggle Twitter Customer Support Dataset (twcs.csv).
-Fulfills Step 1 of Phase 1 (Data Exploration & Brand Selection Plan in hiver_execution_plan.md).
 Produces structured telemetry and verifies dataset integrity without making assumptions.
 """
 

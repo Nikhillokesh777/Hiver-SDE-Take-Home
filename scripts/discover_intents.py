@@ -1,6 +1,5 @@
 """
 Intent Discovery Script.
-Executes Step 1 of Phase 2 (Intent Discovery Plan in hiver_execution_plan.md).
 Embeds a development sample of inbound customer messages using Sentence-Transformers,
 runs KMeans clustering across candidate cluster counts (k=6..10),
 and extracts cluster medoids and representative messages for taxonomy formulation.

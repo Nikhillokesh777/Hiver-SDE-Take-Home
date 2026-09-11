@@ -48,3 +48,7 @@ htmlcov/
 .idea/
 .DS_Store
 Thumbs.db
+pyrightconfig.json
+
+# Runtime Logs
+logs/*.jsonl

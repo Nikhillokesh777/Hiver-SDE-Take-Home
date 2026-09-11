@@ -4,7 +4,6 @@ Wires Stages 1 through 8 into a single, cohesive, observable execution pipeline:
 Input Message -> Preprocessing -> Thread Reconstruction -> Intent Classification ->
 Historical Case Retrieval -> Reply Generation -> Grounding Check -> Confidence & Routing ->
 Structured JSONL Telemetry Logging.
-Follows Sections 5 and 18 of hiver_execution_plan.md.
 """
 
 import os

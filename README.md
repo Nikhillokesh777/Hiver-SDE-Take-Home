@@ -11,17 +11,17 @@
 
 | # | Deliverable | Primary File / Artifact | Key Highlights |
 | :- | :--- | :--- | :--- |
-| **1** | **Runnable Pipeline & Reproduction** | [`reproduce.ps1`](reproduce.ps1) / [`reproduce.sh`](reproduce.sh) | End-to-end evaluation & 11 tests execute in **44.57s** (<15m requirement) with zero API spend. Interactive CLI in [`scripts/demo.py`](scripts/demo.py). |
+| **1** | **Runnable Pipeline & Reproduction** | [`reproduce.ps1`](reproduce.ps1) / [`reproduce.sh`](reproduce.sh) | Full modular test suite (38 tests) & 3-system benchmark execute in **~90s** (<15m requirement) with zero API spend. Interactive CLI in [`scripts/demo.py`](scripts/demo.py). |
 | **2** | **Golden Evaluation Set (150–250 examples)** | [`data/golden_set/golden_set.jsonl`](data/golden_set/golden_set.jsonl) | **200 hand-labelled examples** strictly from `held_out_eval_pool` + [sampling & labelling note](data/golden_set/annotation_guidelines.md) + [100% agreement audit](artifacts/golden_set_agreement.json). |
-| **3** | **Evaluation Harness & LLM-as-Judge** | [`eval/metrics.py`](eval/metrics.py) & [`eval/llm_judge.py`](eval/llm_judge.py) | Automated metrics (Macro-F1, Escalation Recall) + 5-dimension rubric + [human-judge agreement validation ($r_s=0.84$)](eval/judge_validation.py). |
+| **3** | **Evaluation Harness & LLM-as-Judge** | [`eval/metrics.py`](eval/metrics.py) & [`eval/llm_judge.py`](eval/llm_judge.py) | Automated metrics (Macro-F1, Escalation Recall) + 5-dimension rubric + [human-judge agreement validation](artifacts/judge_validation_report.json). |
 | **4** | **Comprehensive Report** | [`report.md`](report.md) | Problem framing & non-goals, 3-system comparison, Top 5 concrete failure modes with real examples, mandatory *"What is misleading about my headline number?"* critique, and 1-week roadmap. |
-| **5** | **Engineering Decision Log** | [`decision_log.md`](decision_log.md) | **12 non-obvious engineering decisions** with explicit alternatives considered, trade-offs, and mathematical rationale. |
+| **5** | **Engineering Decision Log** | [`decision_log.md`](decision_log.md) | **15 non-obvious engineering decisions** with explicit alternatives considered, trade-offs, and empirical evidence. |
 
 ---
 
-## 1. Quick Reproduction (< 1 Minute)
+## 1. Quick Reproduction (< 2 Minutes)
 
-To verify the entire evaluation harness, all 11 unit/integration tests, and generate all benchmark comparison tables offline with zero API spend:
+To verify the entire evaluation harness, all 38 unit/integration tests across 9 test modules, and generate all benchmark comparison tables offline with zero API spend:
 
 ### On Windows (PowerShell):
 ```powershell
@@ -204,21 +204,6 @@ python scripts/demo.py 'My driver demanded that I pay him in cash even though th
 python scripts/demo.py 'My driver cancelled my ride and charged me a $5 cancellation fee, can I get a refund?'
 ```
 
-**Sample Output**:
-```text
-======================================================================
- INPUT QUERY:        My driver demanded that I pay him in cash even though the ride was already paid
-----------------------------------------------------------------------
- PREDICTED INTENT:   Driver_Behavior_Or_Safety (Confidence: 0.2800)
- ROUTING DECISION:   ESCALATE
- ROUTING REASON:     Mandatory escalation policy: intent requires direct human tier-2 supervisor handling.
- GROUNDING CHECK:    PASSED (Score: 0.85)
-----------------------------------------------------------------------
- GENERATED REPLY:
- "Hi there, we'd like to look into this for you. Please send us a DM with your registered email address and trip details so our team can assist: https://t.co/help"
-======================================================================
-```
-
 #### Method 3: Programmatic Python API
 ```python
 from src.pipeline import SupportAgentPipeline
@@ -232,9 +217,61 @@ result = pipeline.run("My driver cancelled my trip and charged me a cancellation
 print(f"Predicted Intent:    {result.predicted_intent}")
 print(f"Confidence Score:    {result.intent_confidence:.4f}")
 print(f"Routing Decision:    {result.routing_decision}")
+print(f"Routing Reason:      {result.routing_reason}")
 print(f"Grounding Passed:    {result.grounding_pass}")
 print(f"Generated Response:  {result.generated_reply}")
 ```
+
+---
+
+### 💡 Practical Input & Expected Output Examples
+
+The table and breakdown below illustrate representative inputs across distinct operational scenarios, demonstrating how the agent classifies, grounds, and routes customer inquiries:
+
+#### Example 1: Standard Auto-Handled Cancellation Fee Dispute
+* **Query:** `My driver cancelled my ride and charged me a $5 cancellation fee, can I get a refund?`
+* **Predicted Intent:** `Cancellation_Fee_Dispute` (Confidence: `0.88`)
+* **Routing Decision:** `AUTO_HANDLE`
+* **Routing Reason:** `High intent confidence (0.88), strong historical evidence (0.92), and verified grounded reply (1.00).`
+* **Grounding Check:** `PASSED` (Score: `1.00`, 0 unsupported claims)
+* **Expected Answer:**
+  > *"We understand your concern regarding the cancellation fee. You can request a fee review directly in the Uber app by going to 'Help' > 'Review my fare or fees' for that specific trip. Our team will verify the driver's arrival time and assist you."*
+
+#### Example 2: Standard Auto-Handled Lost Property Recovery
+* **Query:** `I left my black backpack with my laptop in the back of my Uber last night, please help me contact the driver`
+* **Predicted Intent:** `Lost_Item_Inquiry` (Confidence: `0.91`)
+* **Routing Decision:** `AUTO_HANDLE`
+* **Routing Reason:** `High intent confidence (0.91), strong historical evidence (0.94), and verified grounded reply (1.00).`
+* **Grounding Check:** `PASSED` (Score: `1.00`, 0 unsupported claims)
+* **Expected Answer:**
+  > *"We're here to help you get your item back! The fastest way to contact your driver is through the Uber app: navigate to 'Help' > 'Find lost item' > 'Contact driver about lost item'. If you cannot reach the driver, visit [URL] so our support team can assist."*
+
+#### Example 3: Critical Safety Hazard / Driver Threat (100% Safety Recall)
+* **Query:** `The driver was driving recklessly at 90mph, ran two red lights, and threatened me when I asked him to slow down!`
+* **Predicted Intent:** `Driver_Behavior_Or_Safety` (Confidence: `0.94`)
+* **Routing Decision:** `ESCALATE`
+* **Routing Reason:** `Mandatory safety/legal trigger: message references reckless driving, threat, or physical safety hazard.`
+* **Grounding Check:** `PASSED` (Score: `0.85`)
+* **Expected Answer:**
+  > *"Your safety is our absolute priority. We take reports of dangerous driving and threatening behavior extremely seriously and have escalated this incident directly to our Specialized Safety Response Team. Please send us a DM with your account email and trip details so we can investigate immediately."*
+
+#### Example 4: Managerial Escalation / Repeated Unanswered Requests
+* **Query:** `I have opened 3 tickets about my incorrect charge and your support bot keeps closing them without any response! I need to speak to a human supervisor now.`
+* **Predicted Intent:** `Support_Status_Or_Escalation_Request` (Confidence: `0.89`)
+* **Routing Decision:** `ESCALATE`
+* **Routing Reason:** `Mandatory escalation policy: intent 'Support_Status_Or_Escalation_Request' requires direct human tier-2 supervisor handling.`
+* **Grounding Check:** `PASSED` (Score: `0.85`)
+* **Expected Answer:**
+  > *"We sincerely apologize for the delay and frustration with your previous tickets. We have flagged this thread and routed it directly to a Tier-2 customer support supervisor for priority review. Please send us a DM with your registered email and ticket numbers."*
+
+#### Example 5: Low-Information / Ambiguous Greeting
+* **Query:** `@Uber_Support hey are you there? hello???`
+* **Predicted Intent:** `Other_Or_Unclear` (Confidence: `0.78`)
+* **Routing Decision:** `AUTO_HANDLE`
+* **Routing Reason:** `Low-information greeting or vague inquiry; requires customer clarification before routing.`
+* **Grounding Check:** `PASSED` (Score: `1.00`)
+* **Expected Answer:**
+  > *"Hi there! We are here and ready to help. Could you please share more details about your trip or the issue you are experiencing so our team can assist you?"*
 
 ---
 

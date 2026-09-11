@@ -1,6 +1,6 @@
 """
-Phase 5: Baselines Implementation.
-Implements the two comparison baselines specified in Section 6 of hiver_execution_plan.md:
+Baselines Implementation.
+Implements the two comparison baselines:
 1. Trivial Baseline (Majority-class intent + canned template reply + static routing)
 2. Simple ML / Engineering Baseline (TF-IDF + Logistic Regression intent + 1-NN historical reply verbatim + keyword escalation)
 
@@ -111,10 +111,10 @@ class SimpleMLBaseline:
 
     def __init__(self, model_path: str = TFIDF_MODEL_PATH):
         self.model_path = model_path
-        self.vectorizer = None
-        self.classifier = None
+        self.vectorizer: Optional[Any] = None
+        self.classifier: Optional[Any] = None
         self.retrieval_corpus: Optional[pd.DataFrame] = None
-        self.corpus_tfidf = None
+        self.corpus_tfidf: Optional[Any] = None
 
     def fit_or_load(self, working_set_path: str = WORKING_SET_PATH, train_size: int = 3000, seed: int = 42):
         """Trains or loads precomputed TF-IDF + Logistic Regression model on retrieval_pool."""
@@ -180,8 +180,24 @@ class SimpleMLBaseline:
 
     def run(self, raw_text: str, example_id: str = "") -> BaselineOutput:
         start_t = time.perf_counter()
-        if self.classifier is None:
+        if (
+            self.vectorizer is None
+            or self.classifier is None
+            or self.retrieval_corpus is None
+            or self.corpus_tfidf is None
+        ):
             self.fit_or_load()
+
+        if (
+            self.vectorizer is None
+            or self.classifier is None
+            or self.retrieval_corpus is None
+            or self.corpus_tfidf is None
+        ):
+            raise RuntimeError(
+                "SimpleMLBaseline failed to initialize: one or more model artifacts "
+                "(vectorizer, classifier, retrieval_corpus, corpus_tfidf) are None."
+            )
 
         from sklearn.metrics.pairwise import cosine_similarity
 

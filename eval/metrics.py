@@ -1,6 +1,6 @@
 """
-Phase 6: Evaluation Metrics Module.
-Calculates headline and supporting metrics defined in Section 8 of hiver_execution_plan.md:
+Evaluation Metrics Module.
+Calculates headline and supporting metrics for support agent evaluation:
 1. Intent Classification: Accuracy and Macro-F1.
 2. Escalation Decision: Precision, Recall, F1, and False Negative Rate (safety penalty).
 3. Grounding Rate: % of replies with zero unsupported factual claims.

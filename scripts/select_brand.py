@@ -1,6 +1,5 @@
 """
 Brand Selection Analysis Script.
-Implements Step 2 of Phase 1 (Brand Selection Plan in hiver_execution_plan.md).
 Evaluates top candidate brands against the 5 explicit measurable criteria:
 1. Usable Volume (inbound tweets addressed to brand)
 2. Thread Completeness (% customer tweets with linked brand resolution)
@@ -167,7 +166,7 @@ def run_brand_selection(data_path=DATA_PATH, top_n_candidates=10):
     md_lines = [
         "# Brand Selection Comparison Table",
         "",
-        "Evaluation of top candidate brands based on the 5 measurable criteria from `hiver_execution_plan.md` (§3 Step 2).",
+        "Evaluation of top candidate brands based on the 5 measurable criteria from the brand selection framework.",
         "",
         "| Rank | Brand | Usable Inbound Volume | Thread Completeness (%) | Topical Diversity (Entropy) | English Homogeneity (%) | Substantive Reply (%) | Composite Score |",
         "|---|---|---|---|---|---|---|---|"

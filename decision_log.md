@@ -1,6 +1,6 @@
 # Engineering Decision Log — Hiver Autonomous Customer Support Agent
 
-This decision log documents key architectural, methodological, and implementation trade-offs made during the project, following Section 12 of [`hiver_execution_plan.md`](file:///d:/Desktop/Hiver/hiver_execution_plan.md).
+This decision log documents key architectural, methodological, and implementation trade-offs made during the project, following enterprise architecture decision record (ADR) best practices.
 
 Format per entry:
 - **Decision**
@@ -23,7 +23,7 @@ Format per entry:
 ### Entry 002: Brand Selection — Selection of `Uber_Support` via 5-Criterion Matrix
 - **Decision**: Selected `Uber_Support` as the single brand for the customer support agent pipeline.
 - **Alternatives Considered**: `AmazonHelp` (highest raw volume), `SpotifyCares` (high substance), and `AppleSupport` (high volume).
-- **Reason**: `Uber_Support` achieved the highest composite score (**0.9217**) across the 5 measurable criteria defined in §3 Step 2 of `hiver_execution_plan.md`:
+- **Reason**: `Uber_Support` achieved the highest composite score (**0.9217**) across the 5 measurable criteria defined in the brand selection evaluation matrix:
   1. *Usable Volume*: 56,160 customer queries with linked replies (far exceeding the 1,500-2,000 threshold).
   2. *Thread Completeness*: 99.8% of replies link to existing customer inbound messages.
   3. *Topical Diversity*: Lexical entropy of 0.8232, demonstrating genuine multi-intent complexity (fare disputes, driver issues, pickup problems, lost items, account login) rather than single-intent dominance.
@@ -37,7 +37,7 @@ Format per entry:
 - **Alternatives Considered**: 
   - A 4-class coarse taxonomy (`Billing`, `Technical`, `Driver`, `Other`) — rejected as too broad to ground specific resolution policies or routing.
   - A 25-class fine-grained taxonomy — rejected as producing extreme label sparsity and excessive boundary ambiguity on short Twitter messages.
-- **Reason**: Discovered empirically through Sentence-Transformer clustering (`all-MiniLM-L6-v2`) on 2,500 sample messages, yielding distinct semantic clusters corresponding to these core operational domains. Verified through an audit on 100 fresh held-out customer messages where the unclassifiable (`Other_Or_Unclear`) rate was strictly **5.0%**, well under the 10-15% quality threshold (§4 Step 3).
+- **Reason**: Discovered empirically through Sentence-Transformer clustering (`all-MiniLM-L6-v2`) on 2,500 sample messages, yielding distinct semantic clusters corresponding to these core operational domains. Verified through an audit on 100 fresh held-out customer messages where the unclassifiable (`Other_Or_Unclear`) rate was strictly **5.0%**, well under the 10-15% quality threshold.
 - **Trade-off**: Requires explicit pairwise boundary rules (e.g., distinguishing cancellation fee disputes from general fare disputes, and separating delayed support follow-ups from initial incident reports).
 - **Evidence**: [`taxonomy.md`](file:///d:/Desktop/Hiver/taxonomy.md), [`artifacts/intent_clusters.json`](file:///d:/Desktop/Hiver/artifacts/intent_clusters.json), and [`artifacts/taxonomy_coverage_report.json`](file:///d:/Desktop/Hiver/artifacts/taxonomy_coverage_report.json).
 

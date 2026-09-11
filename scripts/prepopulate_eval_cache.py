@@ -1,7 +1,6 @@
 """
 Precomputes and caches the full 200-example golden evaluation pipeline outputs and LLM-judge scores.
-Guarantees deterministic, zero-cost, <15-minute evaluation reproduction for any reviewer
-as specified in Section 18 of hiver_execution_plan.md.
+Guarantees deterministic, zero-cost, <15-minute evaluation reproduction for any reviewer.
 """
 
 import os

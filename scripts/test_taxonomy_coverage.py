@@ -2,7 +2,6 @@
 Taxonomy Coverage Check Script.
 Evaluates the candidate 8+1 intent taxonomy against 100 fresh customer messages
 to measure unclassifiable rate (Other/Unclear), ambiguity rate, and category coverage.
-Follows Step 3 of Phase 2 in hiver_execution_plan.md.
 """
 
 import os
