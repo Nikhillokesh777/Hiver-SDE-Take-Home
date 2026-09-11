@@ -31,6 +31,9 @@ venv_site = os.path.join(project_root, ".venv", "Lib", "site-packages")
 if os.path.exists(venv_site) and venv_site not in sys.path:
     sys.path.insert(0, venv_site)
 
+import dotenv
+dotenv.load_dotenv(os.path.join(project_root, ".env"))
+
 from src.pipeline import SupportAgentPipeline
 
 SAMPLE_QUERIES = [
